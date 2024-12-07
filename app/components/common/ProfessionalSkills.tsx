@@ -20,7 +20,6 @@ const ProfessionalSkills = (props: Props) => {
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -33,6 +32,7 @@ const ProfessionalSkills = (props: Props) => {
                     {stack.icon}
                   </Card>
                 )}
+                key={stack.id}
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
@@ -40,7 +40,7 @@ const ProfessionalSkills = (props: Props) => {
                   contentStyle,
                 }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>
@@ -51,7 +51,6 @@ const ProfessionalSkills = (props: Props) => {
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -64,6 +63,7 @@ const ProfessionalSkills = (props: Props) => {
                     {stack.icon}
                   </Card>
                 )}
+                key={stack.id}
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
@@ -71,7 +71,7 @@ const ProfessionalSkills = (props: Props) => {
                   contentStyle,
                 }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>
@@ -82,7 +82,6 @@ const ProfessionalSkills = (props: Props) => {
               <Popup
                 trigger={(open) => (
                   <Card
-                    key={stack.id}
                     className="h-16 w-16"
                     style={{ color: stack.color }}
                     onMouseEnter={(e) =>
@@ -95,6 +94,7 @@ const ProfessionalSkills = (props: Props) => {
                     {stack.icon}
                   </Card>
                 )}
+                key={stack.id}
                 position="top center"
                 closeOnDocumentClick
                 on={["hover", "focus"]}
@@ -102,7 +102,7 @@ const ProfessionalSkills = (props: Props) => {
                   contentStyle,
                 }}
               >
-                <span className="text-bg-dark text-sm">{ stack.title}</span>
+                <span className="text-bg-dark text-sm">{stack.title}</span>
               </Popup>
             ))}
           </div>

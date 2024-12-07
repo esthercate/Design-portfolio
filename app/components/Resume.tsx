@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Card } from "./common/styles";
+import { ResumeCard } from "./common/styles";
 import Education from "./common/Education";
 import Experience from "./common/Experience";
 import ProfessionalSkills from "./common/ProfessionalSkills";
@@ -16,11 +16,11 @@ const Resume = (props: Props) => {
   const renderContent = () => {
     switch (activeSection) {
       case "skills":
-        return <ProfessionalSkills />;
+        return <ProfessionalSkills key="skills" />;
       case "education":
-        return <Education />;
+        return <Education key="education" />;
       case "experience":
-        return <Experience />;
+        return <Experience key="experience" />;
       default:
         return null;
     }
@@ -40,7 +40,7 @@ const Resume = (props: Props) => {
             <h1 className="capitalize">Why hire me?</h1>
           </div>
           <div className="flex laptop:flex-col pb-4 gap-5">
-            <Card
+            <ResumeCard
               className={`w-3/4 px-4 py-3 ${
                 activeSection === "skills" ? "bg-orange" : ""
               }`}
@@ -50,8 +50,8 @@ const Resume = (props: Props) => {
                 <GiSkills size={30} />
               </span>
               <span className="hidden tablet:flex">Skills</span>
-            </Card>
-            <Card
+            </ResumeCard>
+            <ResumeCard
               className={`w-3/4 px-4 py-3 ${
                 activeSection === "education" ? "bg-orange" : ""
               }`}
@@ -61,8 +61,8 @@ const Resume = (props: Props) => {
                 <MdCastForEducation size={30} />
               </span>
               <span className="hidden tablet:flex">Education</span>
-            </Card>
-            <Card
+            </ResumeCard>
+            <ResumeCard
               className={`w-3/4 px-4 py-3 ${
                 activeSection === "experience" ? "bg-orange" : ""
               }`}
@@ -72,7 +72,7 @@ const Resume = (props: Props) => {
                 <MdWork size={30} />
               </span>
               <span className="hidden tablet:flex">Experience</span>
-            </Card>
+            </ResumeCard>
           </div>
         </div>
         <div className="w-full tablet:w-3/4">{renderContent()}</div>

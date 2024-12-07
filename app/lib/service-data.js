@@ -13,9 +13,9 @@ export const services = [
   {
     id: 2,
     icon: <FaMobileAlt size={50} className="text-orange" />,
-    title: "App Development",
+    title: "WordPress Development",
     description:
-      "Building intuitive and powerful mobile applications that deliver seamless user experiences.",
+      "Building and empowering your online presence with professional WordPress development services.",
   },
   {
     id: 3,

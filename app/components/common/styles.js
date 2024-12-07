@@ -16,6 +16,22 @@ export const Card = styled.div`
   }
 `;
 
+export const ResumeCard = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #191919;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fe930e;
+    color: #fff;
+    transform: scale(1.1);
+  }
+`;
+
 export const PortfolioCard = styled.div`
   display: flex;
   border-radius: 8px;
