@@ -26,9 +26,11 @@
     "react-qr-code": "^2.0.15",
     "react-text-gradients": "^1.0.2",
     "react-tilt": "^1.0.2",
+    "react-toastify": "^11.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "reactjs-popup": "^2.0.6",
     "slick-carousel": "^1.8.1",
+    "toastify": "^2.0.1",
     "usehooks-ts": "^3.1.0"
   },
   "devDependencies": {
