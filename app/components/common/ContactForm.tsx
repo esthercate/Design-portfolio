@@ -14,7 +14,7 @@ const ContactForm = (props: Props) => {
 
     emailjs
       .sendForm("service_ky36wxk", "template_lv220qw", form.current!, {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
+        publicKey: "Io2rLntQxWhiWXI_4",
       })
       .then(
         () => {
