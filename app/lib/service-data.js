@@ -1,15 +1,14 @@
-import { IoIosLaptop } from "react-icons/io";
-import { FaMobileAlt } from "react-icons/fa";
-import { SiSimpleanalytics } from "react-icons/si";
+import { SiSimpleanalytics } from 'react-icons/si';
 import { MdOutlineSupportAgent, MdOutlineManageAccounts } from 'react-icons/md';
 import { FiFigma } from 'react-icons/fi';
+import { FaWordpressSimple, FaCode } from 'react-icons/fa6';
 
 export const services = [
 	{
 		id: 1,
 		slug: 'web-development',
 		icon: (
-			<IoIosLaptop
+			<FaCode
 				size={50}
 				className="text-orange"
 			/>
@@ -22,7 +21,7 @@ export const services = [
 		id: 2,
 		slug: 'wordpress-development',
 		icon: (
-			<FaMobileAlt
+			<FaWordpressSimple
 				size={50}
 				className="text-orange"
 			/>
@@ -61,26 +60,26 @@ export const services = [
 		id: 5,
 		slug: 'wordpress-web-va',
 		icon: (
-			<MdOutlineManageAccounts
-				size={50}
-				className="text-orange"
-			/>
-		),
-		title: 'Web & WordPress Management VA',
-		description:
-			'Providing website and Wordpress management, content updates, plugin handling, to keep your site running smoothly.',
-	},
-	{
-		id: 6,
-		slug: 'pinterest-va',
-		icon: (
 			<MdOutlineSupportAgent
 				size={50}
 				className="text-orange"
 			/>
 		),
-		title: 'Pinterest VA Services',
+		title: 'Virtual Assistant',
 		description:
-			'Helping you grow your Pinterest presence through pin creation, scheduling, optimization, and engagement strategies.',
+			'Providing virtual website and Wordpress management, content updates, plugin handling, to keep your site running smoothly.',
 	},
+	// {
+	// 	id: 6,
+	// 	slug: 'pinterest-va',
+	// 	icon: (
+	// 		<MdOutlineSupportAgent
+	// 			size={50}
+	// 			className="text-orange"
+	// 		/>
+	// 	),
+	// 	title: 'Pinterest VA Services',
+	// 	description:
+	// 		'Helping you grow your Pinterest presence through pin creation, scheduling, optimization, and engagement strategies.',
+	// },
 ];
