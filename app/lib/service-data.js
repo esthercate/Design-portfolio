@@ -13,7 +13,7 @@ export const services = [
 				className="text-orange"
 			/>
 		),
-		title: 'Web Development',
+		title: 'Web Design and Development',
 		description:
 			"Crafting responsive and visually stunning websites tailored to your brand's unique identity.",
 	},
@@ -39,46 +39,33 @@ export const services = [
 				className="text-orange"
 			/>
 		),
-		title: 'SEO',
+		title: 'Search Engine Optimization',
 		description:
 			'Optimizing your online presence to boost visibility and drive targeted traffic to your website.',
 	},
-	{
-		id: 4,
-		slug: 'ui-ux-design',
-		icon: (
-			<FiFigma
-				size={50}
-				className="text-orange"
-			/>
-		),
-		title: 'UI/UX Design',
-		description:
-			'Creating high-quality UI/UX designs, prototypes, and wireframes for web and mobile applications.',
-	},
-	{
-		id: 5,
-		slug: 'wordpress-web-va',
-		icon: (
-			<MdOutlineSupportAgent
-				size={50}
-				className="text-orange"
-			/>
-		),
-		title: 'Virtual Assistant',
-		description:
-			'Providing virtual website and Wordpress management, content updates, plugin handling, to keep your site running smoothly.',
-	},
 	// {
-	// 	id: 6,
-	// 	slug: 'pinterest-va',
+	// 	id: 4,
+	// 	slug: 'ui-ux-design',
+	// 	icon: (
+	// 		<FiFigma
+	// 			size={50}
+	// 			className="text-orange"
+	// 		/>
+	// 	),
+	// 	title: 'UI/UX Design',
+	// 	description:
+	// 		'Creating high-quality UI/UX designs, prototypes, and wireframes for web and mobile applications.',
+	// },
+	// {
+	// 	id: 5,
+	// 	slug: 'wordpress-web-va',
 	// 	icon: (
 	// 		<MdOutlineSupportAgent
 	// 			size={50}
 	// 			className="text-orange"
 	// 		/>
 	// 	),
-	// 	title: 'Pinterest VA Services',
+	// 	title: 'Pinterest VA',
 	// 	description:
 	// 		'Helping you grow your Pinterest presence through pin creation, scheduling, optimization, and engagement strategies.',
 	// },
