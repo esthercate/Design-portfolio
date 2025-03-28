@@ -1,6 +1,7 @@
 import React from 'react';
 import { services } from '@/app/lib/service-data';
 import { notFound } from 'next/navigation';
+import ServiceHero from '../../components/service-page/ServiceHero';
 
 type ServicePortfolioProps = {
 	params: any;
@@ -11,9 +12,11 @@ const ServicePortfolio = ({ params }: ServicePortfolioProps) => {
 	if (!service) return notFound();
 
 	return (
-		<div className="container mx-auto py-16 px-6">
-			<h1 className="text-4xl font-bold">{service.title}</h1>
-			<p className="mt-4 text-lg">{service.description}</p>
+		<div className="pt-6">
+			<ServiceHero
+				title={service.title}
+				description={service.description}
+			/>
 		</div>
 	);
 };
