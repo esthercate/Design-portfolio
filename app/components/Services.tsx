@@ -19,7 +19,7 @@ const Services = () => {
 				<h6>Services</h6>
 				<h1 className="capitalize">What I do</h1>
 			</div>
-			<div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-10 w-full [&>*:nth-last-child(-n+2)]:laptop:translate-x-[50%]">
+			<div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-10 w-full">
 				{services.map((service) => (
 					<Card
 						key={service.id}
