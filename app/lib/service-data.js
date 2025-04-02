@@ -13,7 +13,7 @@ export const services = [
 				className="text-orange"
 			/>
 		),
-		title: 'Web Design and Development',
+		title: 'Web Development',
 		description:
 			"Crafting responsive and visually stunning websites tailored to your brand's unique identity.",
 	},
@@ -32,17 +32,30 @@ export const services = [
 	},
 	{
 		id: 3,
-		slug: 'seo',
+		slug: 'quality-assuarance',
 		icon: (
 			<SiSimpleanalytics
 				size={50}
 				className="text-orange"
 			/>
 		),
-		title: 'Search Engine Optimization',
+		title: 'QA Analysis',
 		description:
-			'Optimizing your online presence to boost visibility and drive targeted traffic to your website.',
+			'Website testing to ensure functionality, performance, and a seamless user experience.',
 	},
+	// {
+	// 	id: 3,
+	// 	slug: 'seo',
+	// 	icon: (
+	// 		<SiSimpleanalytics
+	// 			size={50}
+	// 			className="text-orange"
+	// 		/>
+	// 	),
+	// 	title: 'QA Analysis',
+	// 	description:
+	// 		'Optimizing your online presence to boost visibility and drive targeted traffic to your website.',
+	// },
 	// {
 	// 	id: 4,
 	// 	slug: 'ui-ux-design',
@@ -58,7 +71,7 @@ export const services = [
 	// },
 	// {
 	// 	id: 5,
-	// 	slug: 'wordpress-web-va',
+	// 	slug: 'pinterest-va',
 	// 	icon: (
 	// 		<MdOutlineSupportAgent
 	// 			size={50}
