@@ -22,12 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="flex flex-col h-screen justify-between">
-        <Navbar />
-         {children}
-        <Footer />
-      </body>
-    </html>
-  );
+		<html lang="en">
+			<body className="flex flex-col h-screen justify-between">{children}</body>
+		</html>
+	);
 }

@@ -6,6 +6,9 @@ import VaServices from '@/app/components/service-page/VaServices';
 import Tools from '@/app/components/service-page/Tools';
 import Value from '@/app/components/service-page/Value';
 import Projects from '@/app/components/service-page/Projects';
+import Contact from '@/app/components/Contact';
+import Navbar from '@/app/components/Navbar';
+import Footer from '@/app/components/Footer';
 
 type ServicePortfolioProps = {
 	params: any;
@@ -17,14 +20,17 @@ const ServicePortfolio = ({ params }: ServicePortfolioProps) => {
 
 	return (
 		<div className="">
+			<Navbar pageType="services" />
 			<ServiceHero
 				title={service.title}
 				description={service.description}
 			/>
-			<VaServices />
-			<Tools />
+			<VaServices serviceId={service.id} />
+			<Tools serviceId={service.id} />
 			<Value />
 			<Projects />
+			<Contact />
+			<Footer />
 		</div>
 	);
 };
