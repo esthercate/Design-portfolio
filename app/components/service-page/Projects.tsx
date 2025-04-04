@@ -7,8 +7,11 @@ type Props = {};
 
 const Projects = (props: Props) => {
 	return (
-		<div className="flex flex-col px-5 tablet:px-16 py-10 w-full gap-6">
-			<div className="flex gap-8 justify-center">
+		<div
+			className="flex flex-col px-5 tablet:px-16 py-10 w-full gap-6"
+			id="portfolio"
+		>
+			<div className="flex gap-8 justify-center text-sm">
 				<div className="text-orange underline cursor-pointer">All</div>
 				<div className="cursor-pointer hover:text-orange hover:underline">
 					Development

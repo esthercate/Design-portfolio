@@ -1,55 +1,21 @@
 import React from 'react';
-import seoImage from '../../../public/se02.jpg';
-import backendImage from '../../../public/computer.jpg';
-import frontendImage from '../../../public/frontend.jpg';
 import { LuDot } from 'react-icons/lu';
+import { services } from '../../lib/service-data';
 
-type Props = {};
+type ToolsProps = {
+	serviceId?: number;
+};
 
-const toolsData = [
-	{
-		category: 'Frontend',
-		technologies: [
-			'HTML',
-			'CSS',
-			'JavaScript',
-			'TypeScript',
-			'React',
-			'Next.js',
-			'Tailwind CSS',
-			'Figma',
-		],
-		image: frontendImage,
-	},
-	{
-		category: 'Backend',
-		technologies: [
-			'Node.js',
-			'Express',
-			'MongoDB',
-			'MySQL',
-			'Python',
-			'GraphQL',
-		],
-		image: backendImage, // Add the corresponding image for Backend
-	},
-	{
-		category: 'SEO',
-		technologies: [
-			'Google Analytics',
-			'Google Search Console',
-			'SEMrush',
-			'Ahrefs',
-			'Moz',
-			'Keyword Planner',
-		],
-		image: seoImage, // Add the corresponding image for SEO
-	},
-];
+const Tools = ({ serviceId = 1 }: ToolsProps) => {
+	// Find the service data for the specified service ID
+	const service = services.find((s) => s.id === serviceId);
+	const toolsData = service?.toolsData || [];
 
-const Tools = (props: Props) => {
 	return (
-		<div className="flex flex-col px-5 tablet:px-16 py-10 gap-16">
+		<div
+			className="flex flex-col px-5 tablet:px-16 py-10 gap-16"
+			id="technologies"
+		>
 			<div className="flex flex-col gap-2 w-full justify-center items-center">
 				<h2 className="flex justify-center items-center text-white gap-3">
 					My Developer Toolkit
@@ -64,7 +30,7 @@ const Tools = (props: Props) => {
 					<div
 						key={index}
 						className="relative w-full tablet:w-1/4 bg-no-repeat bg-center bg-cover h-72 flex flex-col items-center rounded-t-md"
-						style={{ backgroundImage: `url(${tool.image.src})` }} // Set background image dynamically
+						style={{ backgroundImage: `url(${tool.image.src})` }}
 					>
 						<div className="absolute bg-bg-gray/90 w-3/4 top-[-40px] h-full items-center py-1 flex px-4 flex-col gap-6 rounded-t-md">
 							<h5 className="text-white">{tool.category}</h5>

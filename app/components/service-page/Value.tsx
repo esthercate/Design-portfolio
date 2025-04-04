@@ -59,7 +59,7 @@ const Value = (props: Props) => {
 				))}
 			</div>
 			<Link
-				href={'/'}
+				href={'#contact'}
 				className="py-2 px-4 border border-orange hover:bg-orange m-auto rounded-lg flex justify-center items-center mt-3 text-white cursor-pointer"
 			>
 				Reach out Today
