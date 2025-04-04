@@ -1,27 +1,19 @@
-import type { Metadata } from "next";
-// import { Bitter } from "next/font/google";
-import "./globals.css";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-
-// const bitter = Bitter({
-//   weight: ['100', '300', '400', '500', '700'],
-//   style: ['normal', 'italic'],
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
+import type { Metadata } from 'next';
+import './globals.css';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Catherine - Design Portfolio",
-  description: "Software Engineer",
+	title: 'Catherine - Design Portfolio',
+	description: 'Software Engineer',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
+	return (
 		<html lang="en">
 			<body className="flex flex-col h-screen justify-between">{children}</body>
 		</html>
