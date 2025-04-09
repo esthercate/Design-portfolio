@@ -17,7 +17,7 @@ const Tools = ({ serviceId = 1 }: ToolsProps) => {
 			id="technologies"
 		>
 			<div className="flex flex-col gap-2 w-full justify-center items-center">
-				<h2 className="flex justify-center items-center text-white gap-3">
+				<h2 className="flex justify-center items-center text-white gap-3 text-center">
 					My Developer Toolkit
 				</h2>
 				<p className="w-full laptop:w-1/2 text-center italic">
