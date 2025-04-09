@@ -27,21 +27,21 @@ import { TbSeo } from "react-icons/tb";
 import { title } from "process";
 
 export const socialIcons = [
-  {
-    id: 1,
-    icon: <FaLinkedinIn size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
-  {
-    id: 2,
-    icon: <FaXTwitter size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
-  {
-    id: 3,
-    icon: <MdWhatsapp size={25} />,
-    url: "https://www.linkedin.com/in/catherine-vuthi-ba18aa179/",
-  },
+	{
+		id: 1,
+		icon: <FaLinkedinIn size={25} />,
+		url: 'https://www.linkedin.com/in/catherine-vuthi-ba18aa179/',
+	},
+	{
+		id: 2,
+		icon: <FaXTwitter size={25} />,
+		url: 'https://x.com/Cate_ev',
+	},
+	{
+		id: 3,
+		icon: <MdWhatsapp size={25} />,
+		url: 'https://wa.me/254796510663?text=Hi%20Catherine%2C%20I%27m%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20details%20or%20schedule%20a%20time%20to%20discuss%3F',
+	},
 ];
 
 export const techStack = [
