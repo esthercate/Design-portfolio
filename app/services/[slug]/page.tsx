@@ -28,7 +28,7 @@ const ServicePortfolio = ({ params }: ServicePortfolioProps) => {
 			<VaServices serviceId={service.id} />
 			<Tools serviceId={service.id} />
 			<Value />
-			<Projects />
+			<Projects projectsData={service.projectsData || []} />
 			<Contact />
 			<Footer />
 		</div>
