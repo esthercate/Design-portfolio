@@ -23,7 +23,7 @@ const ServiceHero = ({ title, description }: ServiceHeroProps) => {
 								{title}
 							</LinearGradient>
 						</h1>
-						<p className="mt-4 text-gray-700">Virtual Assistant</p>
+						{/* <p className="mt-4 text-gray-700">Digital Assistant</p> */}
 					</div>
 				</div>
 			</div>
