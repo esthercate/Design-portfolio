@@ -9,11 +9,11 @@ const QrCode = (props: Props) => {
 		<div className="w-full flex flex-col gap-3">
 			<div className="bg-white rounded-sm p-2 tablet:p-3">
 				<Link
-					href="https://docs.google.com/document/d/1kODs2Uu8iw9Mm5LpfR383Z2XHTlgGBxVJhW8VaXn3kI/edit?usp=sharing"
+					href="https://docs.google.com/document/d/1ZKrq1ABqtFYRVMMfi1xK_h-4O_n95j6FNblz92WbW6E/edit?usp=sharing"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<QRCode value="https://docs.google.com/document/d/1kODs2Uu8iw9Mm5LpfR383Z2XHTlgGBxVJhW8VaXn3kI/edit?usp=sharing" />
+					<QRCode value="https://docs.google.com/document/d/1ZKrq1ABqtFYRVMMfi1xK_h-4O_n95j6FNblz92WbW6E/edit?usp=sharing" />
 				</Link>
 			</div>
 			<div className="flex flex-col text-center font-semibold">
