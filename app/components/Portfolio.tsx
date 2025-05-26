@@ -14,7 +14,7 @@ const Portfolio = (props: Props) => {
 			className="bg-bg-gray py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-12"
 			id="portfolio"
 		>
-			<div className="flex flex-col gap-4 w-full">
+			<div className="flex flex-col gap-4 w-full text-center">
 				<h6>Portfolio</h6>
 				<h1 className="capitalize">My Recent Work</h1>
 			</div>
