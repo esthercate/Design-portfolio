@@ -22,10 +22,6 @@ const homeMenus = [
 		link: '/',
 	},
 	{
-		title: 'Services',
-		link: '#services',
-	},
-	{
 		title: 'Resume',
 		link: '#resume',
 	},
