@@ -11,14 +11,14 @@ type Props = {};
 const Portfolio = (props: Props) => {
   return (
 		<div
-			className="bg-bg-gray py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-12"
+			className="bg-bg-gray py-10 tablet:py-16 px-5 tablet:px-16 flex flex-col gap-12"
 			id="portfolio"
 		>
 			<div className="flex flex-col gap-4 w-full text-center">
 				<h6>Portfolio</h6>
-				<h1 className="capitalize">My Recent Work</h1>
+				<h2 className="capitalize">My Recent Work</h2>
 			</div>
-			<div className="w-full grid grid-cols-1 tablet:grid-cols-2 gap-4">
+			<div className="w-full grid grid-cols-1 tablet:grid-cols-3 gap-4">
 				{projects.map(
 					({ image, title, technologies, liveUrl, type, id }, index) => (
 						<Link
