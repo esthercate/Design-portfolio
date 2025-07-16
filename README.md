@@ -15,7 +15,7 @@ A clean, responsive personal portfolio showcasing my work, technical skills, and
 [Visit My Portfolio](https://design-portfolio-woad.vercel.app/)
 
 #### Homepage
-![Homepage](./screenshots/my-portfolio.png)
+![Homepage](./screenshots/new-portfolio.png)
 
 ## Features
 
