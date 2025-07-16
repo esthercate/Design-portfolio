@@ -19,9 +19,10 @@ A clean, responsive personal portfolio showcasing my work, technical skills, and
 
 ## Features
 
-- Clean, modern UI with smooth animations
-- Fully responsive design
-- Dynamic project showcase
+- Clean, modern UI with smooth animations  
+- QR code linking to my downloadable PDF résumé  
+- Fully responsive design  
+- Dynamic project showcase  
 - Contact form with email integration
 
 ---
