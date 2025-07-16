@@ -70,7 +70,7 @@ const Portfolio = (props: Props) => {
 									<div className="flex flex-wrap gap-2 justify-center">
 										{technologies.map((technology, index) => (
 											<span
-												className="bg-bg-dark/95 backdrop-blur-md border border-orange/30 px-3 py-1 rounded-full text-xs text-orange font-medium"
+												className="bg-bg-dark/95 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white font-medium"
 												key={index}
 											>
 												{technology}
@@ -120,7 +120,7 @@ const Portfolio = (props: Props) => {
 												<div className="flex flex-wrap gap-2 justify-center">
 													{technologies.map((technology, index) => (
 														<span
-															className="bg-bg-dark/95 backdrop-blur-md border border-orange/30 px-3 py-1 rounded-full text-xs text-orange font-medium"
+															className="bg-bg-dark/95 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white font-medium"
 															key={index}
 														>
 															{technology}
