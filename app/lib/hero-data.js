@@ -37,11 +37,11 @@ export const socialIcons = [
 		icon: <FaXTwitter size={25} />,
 		url: 'https://x.com/Cate_ev',
 	},
-	{
-		id: 3,
-		icon: <MdWhatsapp size={25} />,
-		url: 'https://wa.me/254796510663?text=Hi%20Catherine%2C%20I%27m%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20details%20or%20schedule%20a%20time%20to%20discuss%3F',
-	},
+	// {
+	// 	id: 3,
+	// 	icon: <MdWhatsapp size={25} />,
+	// 	url: 'https://wa.me/254796510663?text=Hi%20Catherine%2C%20I%27m%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20details%20or%20schedule%20a%20time%20to%20discuss%3F',
+	// },
 ];
 
 export const techStack = [
