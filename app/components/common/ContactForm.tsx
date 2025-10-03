@@ -15,31 +15,31 @@ const ContactForm = (props: Props) => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_ky36wxk", "template_lv220qw", form.current!, {
-        publicKey: "Io2rLntQxWhiWXI_4",
-      })
-      .then(
-        () => {
-          toast.success("Message Sent successfully!", {
-            position: "bottom-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
-            transition: Slide,
-          });
-          if (form.current) {
-            form.current.reset();
-          }
-        },
-        (error) => {
-          toast.error("Failed to send message");
-          console.log("FAILED...", error.text);
-        }
-      );
+			.sendForm('service_fvy2wyn', 'template_lv220qw', form.current!, {
+				publicKey: 'Io2rLntQxWhiWXI_4',
+			})
+			.then(
+				() => {
+					toast.success('Message Sent successfully!', {
+						position: 'bottom-right',
+						autoClose: 2000,
+						hideProgressBar: false,
+						closeOnClick: false,
+						pauseOnHover: true,
+						draggable: true,
+						progress: undefined,
+						theme: 'dark',
+						transition: Slide,
+					});
+					if (form.current) {
+						form.current.reset();
+					}
+				},
+					(error) => {
+						toast.error('Failed to send message');
+						console.log('FAILED...', error.text);
+					};
+			);
   };
 
   return (
