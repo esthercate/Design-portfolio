@@ -12,9 +12,9 @@ const ContactForm = (props: Props) => {
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+		e.preventDefault();
 
-    emailjs
+		emailjs
 			.sendForm('service_fvy2wyn', 'template_lv220qw', form.current!, {
 				publicKey: 'Io2rLntQxWhiWXI_4',
 			})
@@ -35,12 +35,12 @@ const ContactForm = (props: Props) => {
 						form.current.reset();
 					}
 				},
-					(error) => {
-						toast.error('Failed to send message');
-						console.log('FAILED...', error.text);
-					};
+				(error) => {
+					toast.error('Failed to send message');
+					console.log('FAILED...', error.text);
+				}
 			);
-  };
+	}
 
   return (
     <ContactCard className="flex flex-col px-4 py-3">

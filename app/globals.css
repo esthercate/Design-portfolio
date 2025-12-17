@@ -31,9 +31,9 @@
     @apply text-base;
   }
   h6 {
-    @apply text-sm text-orange uppercase italic;
+    @apply text-base text-orange uppercase italic font-semibold;
   }
   p {
-    @apply text-xs tablet:text-sm text-white/75;
+    @apply text-base tablet:text-sm text-white/65;
   }
 }
