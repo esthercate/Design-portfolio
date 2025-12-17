@@ -17,12 +17,8 @@ const Hero = (props: Props) => {
 					<div className="flex flex-col gap-1">
 						<p>Hello! I'm Catherine,</p>
 					</div>
-					<h1 className="uppercase text-xl tablet:text-3xl">
-						<LinearGradient
-							gradient={['to right', '#4A55C7 , #6366F1, #e6e8fa']}
-						>
-							Software Engineer
-						</LinearGradient>
+					<h1 className="text-xl tablet:text-3xl text-orange">
+						Software Developer
 					</h1>
 					<p className="tablet:pr-6">
 						I specialize in creating visually stunning user experiences that

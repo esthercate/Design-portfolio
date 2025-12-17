@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Bitter", serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
   color-scheme: dark;
@@ -34,6 +34,6 @@
     @apply text-base text-orange uppercase italic font-semibold;
   }
   p {
-    @apply text-base tablet:text-sm text-white/65;
+    @apply text-sm tablet:text-base text-white/65;
   }
 }
