@@ -3,8 +3,6 @@
 import React, { useCallback } from 'react';
 import { PortfolioCard } from './common/styles';
 import {
-	MdWeb,
-	MdArrowForward,
 	MdArrowBack,
 	MdArrowForward as MdNext,
 } from 'react-icons/md';
@@ -131,7 +129,7 @@ const Portfolio = (props: Props) => {
 										</div>
 										<div className="p-4 flex flex-col gap-3">
 											<div className="flex justify-between items-center">
-												<p className="text-lg font-semibold group-hover:text-orange transition-colors">
+												<p className="text-md font-semibold group-hover:text-orange transition-colors">
 													{title}
 												</p>
 											</div>
