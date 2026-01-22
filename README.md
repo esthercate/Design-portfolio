@@ -2,6 +2,9 @@
 
 A clean, responsive personal portfolio showcasing my work, technical skills, and experience as a frontend developer. Built to highlight projects, share my background, and make it easy for employers and collaborators to connect with me.
 
+
+### Homepage
+
 ![Homepage](./screenshots/newportfolio.png)
 
 
@@ -57,3 +60,5 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ## Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/catherine-esther-vuthi/)
+
+- [X](https://x.com/Cate_ev)
