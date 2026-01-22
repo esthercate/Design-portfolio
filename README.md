@@ -1,6 +1,9 @@
 # Personal Portfolio
 
+![Homepage](./screenshots/newportfolio.png.png)
+
 A clean, responsive personal portfolio showcasing my work, technical skills, and experience as a frontend developer. Built to highlight projects, share my background, and make it easy for employers and collaborators to connect with me.
+
 
 ## Table of Contents
 
@@ -14,8 +17,6 @@ A clean, responsive personal portfolio showcasing my work, technical skills, and
 
 [Visit My Portfolio](https://design-portfolio-woad.vercel.app/)
 
-#### Homepage
-![Homepage](./screenshots/newportfolio.png.png)
 
 ## Features
 
