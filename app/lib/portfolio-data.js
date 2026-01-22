@@ -50,8 +50,8 @@ export const projects = [
 	{
 		id: 7,
 		image: '/delani.png',
-		title: 'Creative Agency Landing Page UI (React)',
-		technologies: ['React', 'Bootstrap'],
+		title: 'Creative Agency Landing Page UI (HTML, CSS, JS)',
+		technologies: ['HTML', 'CSS', 'Javascript'],
 		liveUrl: 'https://esthercate.github.io/Delani-Studio/',
 	},
 ];
