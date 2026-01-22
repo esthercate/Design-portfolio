@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-![Homepage](./screenshots/newportfolio.png)
-
 A clean, responsive personal portfolio showcasing my work, technical skills, and experience as a frontend developer. Built to highlight projects, share my background, and make it easy for employers and collaborators to connect with me.
+
+![Homepage](./screenshots/newportfolio.png)
 
 
 ## Table of Contents
