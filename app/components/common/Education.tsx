@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { CgWebsite } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa6";
-import { FaGraduationCap } from "react-icons/fa";
+import { FaGraduationCap, FaAws } from "react-icons/fa";
 
 type Props = {};
 
@@ -21,7 +21,21 @@ const Education = (props: Props) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#1b1b1c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
-          date="Feb 2022 - Aug 2022"
+          date="Graduated Dec 2025"
+          iconStyle={{ background: "#fe930e", color: "#fff" }}
+          icon={<FaAws />}
+          visible={true}
+        >
+          <h4 className="vertical-timeline-element-title text-white">
+            AWS Certified Cloud Practitioner
+          </h4>
+          <p className="vertical-timeline-element-subtitle">AWS re/Start Program</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "#1b1b1c", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
+          date="Graduated Nov 2022"
           iconStyle={{ background: "#fe930e", color: "#fff" }}
           icon={<FaLaptopCode />}
           visible={true}
@@ -35,7 +49,7 @@ const Education = (props: Props) => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "#1b1b1c", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid #1b1b1c" }}
-          date="Sep 2014 - Mar 2019"
+          date="Graduated Mar 2019"
           iconStyle={{ background: "#fe930e", color: "#fff" }}
           icon={<FaGraduationCap />}
           visible={true}
