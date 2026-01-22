@@ -68,12 +68,7 @@ const Navbar = ({ pageType = 'home' }: Props) => {
 	return (
 		<div className="flex flex-row w-full items-center justify-between px-5 tablet:px-8 py-4 bg-bg-dark border-b-2 border-bg-gray">
 			<div>
-				<Image
-					src="/icon.png"
-					width={50}
-					height={50}
-					alt="logo"
-				/>
+				<h3 className="text-orange">Catherine</h3>
 			</div>
 			<div className="hidden tablet:flex flex-row gap-5 text-sm">
 				{menus.map((menu, index) => (
