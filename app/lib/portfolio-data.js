@@ -2,7 +2,7 @@ export const projects = [
 		{
 		id: 1,
 		image: '/mpesa.png',
-		title: 'Mpesa PDF Statement to Excel & Expense Analyzer (Next.js, TypeScript)',
+		title: 'Mpesa PDF Statement to Excel (Next.js, TypeScript)',
 		technologies: ['NextJs', 'Typescript', 'TailwindCSS', 'EmailJS'],
 		liveUrl: 'https://m-pesa-expense-tracker.vercel.app/',
 	},
