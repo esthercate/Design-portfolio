@@ -1,13 +1,20 @@
 export const projects = [
-	{
+		{
 		id: 1,
+		image: '/mpesa.png',
+		title: 'Mpesa PDF Statement to Excel & Expense Analyzer (Next.js, TypeScript)',
+		technologies: ['NextJs', 'Typescript', 'TailwindCSS', 'EmailJS'],
+		liveUrl: 'https://m-pesa-expense-tracker.vercel.app/',
+	},
+	{
+		id: 2,
 		image: '/portfolioimg.png',
 		title: 'Modern Frontend Portfolio Website (Next.js, TypeScript)',
 		technologies: ['NextJs', 'Typescript', 'TailwindCSS', 'EmailJS'],
 		liveUrl: '/',
 	},
 	{
-		id: 2,
+		id: 3,
 		image: '/hospital-finder.png',
 		title: 'Hospital Locator Web App with Maps & Emergency Data',
 		technologies: [
@@ -20,28 +27,28 @@ export const projects = [
 		liveUrl: 'https://hospital-finder-eta.vercel.app/',
 	},
 	{
-		id: 3,
+		id: 4,
 		image: '/pizzacity.png',
 		title: 'Restaurant Ordering Interface (React UI)',
 		technologies: ['React', 'TailwindCSS', 'Javascript'],
 		liveUrl: 'https://esthercate.github.io/Slice-City/',
 	},
 	{
-		id: 4,
+		id: 5,
 		image: '/sbimg.png',
 		title: 'Enterprise Platform Frontend (StartupBlink)',
 		technologies: ['NextJs', 'TailwindCSS', 'Typescript', 'Python'],
 		liveUrl: 'https://www.startupblink.com/',
 	},
 	{
-		id: 5,
+		id: 6,
 		image: '/huddle.png',
 		title: 'Responsive Marketing Landing Page (React, Bootstrap)',
 		technologies: ['React', 'Bootstrap'],
 		liveUrl: 'https://esthercate.github.io/huddle-landing-page/',
 	},
 	{
-		id: 6,
+		id: 7,
 		image: '/delani.png',
 		title: 'Creative Agency Landing Page UI (React)',
 		technologies: ['React', 'Bootstrap'],
