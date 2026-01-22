@@ -5,14 +5,6 @@ A clean, responsive personal portfolio showcasing my work, technical skills, and
 ![Homepage](./screenshots/newportfolio.png)
 
 
-## Table of Contents
-
-- [Live Demo](#live-demo)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [License](#license)
-
 ## Live Demo
 
 [Visit My Portfolio](https://design-portfolio-woad.vercel.app/)
@@ -64,4 +56,4 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ## Connect with Me
 
-- [LinkedIn](https://www.linkedin.com/in/catherine-vuthi-ba18aa179/)
+- [LinkedIn](https://www.linkedin.com/in/catherine-esther-vuthi/)
