@@ -18,11 +18,10 @@ const Hero = (props: Props) => {
 						<p>Hello! I'm Catherine,</p>
 					</div>
 					<h1 className="text-xl tablet:text-3xl text-orange">
-						Software Developer
+						Frontend Software Engineer
 					</h1>
 					<p className="tablet:pr-6">
-						I specialize in creating visually stunning user experiences that
-						prioritize both beauty and accessibility.
+						I specialize in React, Next.js and modern JavaScript, translating UI/UX designs into responsive, maintainable, and impactful web applications.
 					</p>
 					<div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
 						<SocialIcons />
