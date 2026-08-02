@@ -17,15 +17,15 @@ const Hero = (props: Props) => {
 					<div className="flex flex-col gap-1">
 						<p>Hello! I'm Catherine,</p>
 					</div>
-					<h1 className="text-xl tablet:text-3xl text-orange">
-						Frontend Software Engineer
-					</h1>
+					<h1 className="text-xl tablet:text-3xl text-orange">Web Developer</h1>
 					<p className="tablet:pr-6">
-						I specialize in React, Next.js and modern JavaScript, translating UI/UX designs into responsive, maintainable, and impactful web applications.
+						I specialize in React, Next.js and modern JavaScript, translating
+						UI/UX designs into responsive, maintainable, and impactful web
+						applications.
 					</p>
 					<div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
 						<SocialIcons />
-						<TechStack />
+						{/* <TechStack /> */}
 					</div>
 				</div>
 				<div className="flex">
