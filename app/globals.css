@@ -16,22 +16,22 @@
 
 @layer base {
   h1 {
-    @apply text-3xl font-semibold;
+    @apply text-3xl tablet:text-5xl font-semibold;
   }
   h2 {
-    @apply text-2xl font-semibold;
+    @apply text-2xl tablet:text-4xl font-semibold;
   }
   h3 {
-    @apply text-xl;
+    @apply text-xl tablet:text-3xl;
   }
   h4 {
-    @apply text-sm tablet:text-lg;
+    @apply text-lg tablet:text-2xl;
   }
   h5 {
-    @apply text-base;
+    @apply text-base tablet:text-xl;
   }
   h6 {
-    @apply text-base text-orange uppercase italic font-semibold;
+    @apply text-sm tablet:text-base text-orange uppercase italic font-semibold;
   }
   p {
     @apply text-sm tablet:text-base text-white/65;
