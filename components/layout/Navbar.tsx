@@ -22,11 +22,15 @@ const homeMenus = [
 		link: '/',
 	},
 	{
-		title: 'Resume',
-		link: '#resume',
+		title: 'About',
+		link: '/',
 	},
 	{
-		title: 'Portfolio',
+		title: 'services',
+		link: '#services',
+	},
+	{
+		title: 'Projects',
 		link: '#portfolio',
 	},
 	{
