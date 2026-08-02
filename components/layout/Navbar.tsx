@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { MdMenu } from "react-icons/md";
-import { Card } from "./common/styles";
+import { Card } from "../common/styles";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
@@ -68,7 +68,7 @@ const Navbar = ({ pageType = 'home' }: Props) => {
 	return (
 		<div className="flex flex-row w-full items-center justify-between px-5 tablet:px-8 py-4 bg-bg-dark border-b-2 border-bg-gray">
 			<div>
-				<h3 className="text-orange">Catherine</h3>
+				<h3 className="text-orange">Catherine.dev</h3>
 			</div>
 			<div className="hidden tablet:flex flex-row gap-5 text-sm">
 				{menus.map((menu, index) => (

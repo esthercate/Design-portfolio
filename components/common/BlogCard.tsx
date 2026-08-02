@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-import { PortfolioCard } from "../common/styles";
+import { PortfolioCard } from "./styles";
 
 type Props = {
   blogPosts: {

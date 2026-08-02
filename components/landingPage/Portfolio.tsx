@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useCallback } from 'react';
-import { PortfolioCard } from './common/styles';
+import { PortfolioCard } from '../common/styles';
 import {
 	MdArrowBack,
 	MdArrowForward as MdNext,
 } from 'react-icons/md';
 import Link from 'next/link';
-import { projects } from '../lib/portfolio-data';
+import { projects } from '../../lib/portfolio-data';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 

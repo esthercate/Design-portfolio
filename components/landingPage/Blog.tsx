@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogCard from './common/BlogCard';
-import {blogPosts} from '../lib/blog-data'
+import BlogCard from '../common/BlogCard';
+import {blogPosts} from '../../lib/blog-data'
 
 const Blog = () => {
   return (

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { ResumeCard } from "./common/styles";
-import Education from "./common/Education";
-import Experience from "./common/Experience";
-import ProfessionalSkills from "./common/ProfessionalSkills";
+import { ResumeCard } from "../common/styles";
+import Education from "../common/Education";
+import Experience from "../common/Experience";
+import ProfessionalSkills from "../common/ProfessionalSkills";
 import { GiSkills } from "react-icons/gi";
 import { MdCastForEducation, MdWork } from "react-icons/md";
 

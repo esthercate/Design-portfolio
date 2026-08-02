@@ -1,6 +1,6 @@
 "use client";
 
-import { ContactCard } from "../common/styles";
+import { ContactCard } from "./styles";
 import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast, Slide } from "react-toastify";

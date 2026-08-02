@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import SocialIcons from "./common/SocialIcons";
-import TechStack from "./common/TechStack";
+import SocialIcons from "../common/SocialIcons";
+import TechStack from "../common/TechStack";
 import { LinearGradient } from "react-text-gradients";
 import { FaArrowDown } from "react-icons/fa";
-import QrCode from "./common/QrCode";
+import QrCode from "../common/QrCode";
 import Link from "next/link";
 
 type Props = {};
