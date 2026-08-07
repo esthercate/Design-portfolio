@@ -10,7 +10,7 @@ import Footer from '../components/layout/Footer';
 export default function Home() {
 	return (
 		<main className="pt-6 max-w-7xl mx-auto">
-			<Navbar pageType="home" />
+			<Navbar />
 			<Hero />
 			<Services />
 			<Resume />

@@ -22,7 +22,7 @@
     @apply text-2xl tablet:text-4xl font-semibold;
   }
   h3 {
-    @apply text-xl tablet:text-3xl;
+    @apply text-xl tablet:text-2xl;
   }
   h4 {
     @apply text-lg tablet:text-2xl;
