@@ -19,9 +19,7 @@ const Hero = (props: Props) => {
 					</div>
 					<h1 className="text-xl tablet:text-3xl text-orange">Web Developer</h1>
 					<p className="tablet:pr-6">
-						I specialize in React, Next.js and modern JavaScript, translating
-						UI/UX designs into responsive, maintainable, and impactful web
-						applications.
+						I build websites that bring in more customers.
 					</p>
 					<div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
 						<SocialIcons />
