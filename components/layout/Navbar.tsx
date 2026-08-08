@@ -1,49 +1,11 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { MdMenu } from "react-icons/md";
-import { Card } from "../common/styles";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
+import Link from 'next/link';
+import Button from '../ui/Button';
+import { FaArrowRight } from 'react-icons/fa6';
+import Image from 'next/image';
 
-type Props = {
-	pageType?: 'home' | 'services';
-};
-
-const contentStyle = { background: '#1b1b1c' };
-const overlayStyle = { background: '#1b1b1c' };
-const arrowStyle = { color: '#1b1b1c' };
-
-const homeMenus = [
-	{
-		title: 'Home',
-		link: '/',
-	},
-	{
-		title: 'About',
-		link: '/',
-	},
-	{
-		title: 'services',
-		link: '#services',
-	},
-	{
-		title: 'Projects',
-		link: '#portfolio',
-	},
-	{
-		title: 'Blog',
-		link: '#blog',
-	},
-	{
-		title: 'Contact',
-		link: '#contact',
-	},
-];
-
-const servicesMenus = [
+const navLinks = [
 	{
 		title: 'Home',
 		link: '/',
@@ -53,12 +15,16 @@ const servicesMenus = [
 		link: '#services',
 	},
 	{
-		title: 'Technologies',
-		link: '#technologies',
+		title: 'About',
+		link: '#about',
 	},
 	{
-		title: 'Portfolio',
-		link: '#portfolio',
+		title: 'Projects',
+		link: '#projects',
+	},
+	{
+		title: 'Testimonials',
+		link: '#testimonials',
 	},
 	{
 		title: 'Contact',
@@ -66,72 +32,57 @@ const servicesMenus = [
 	},
 ];
 
-const Navbar = ({ pageType = 'home' }: Props) => {
-	const menus = pageType === 'home' ? homeMenus : servicesMenus;
-
+const Navbar = () => {
 	return (
-		<div className="flex flex-row w-full items-center justify-between px-5 tablet:px-8 py-4 bg-bg-dark border-b-2 border-bg-gray">
-			<div>
-				<h3 className="text-orange">Catherine.dev</h3>
-			</div>
-			<div className="hidden tablet:flex flex-row gap-5 text-sm">
-				{menus.map((menu, index) => (
+		<nav className="flex items-center justify-between py-4">
+			{/* Logo */}
+			<Link
+				href="/"
+				className="flex items-center gap-3"
+			>
+				<Image
+					src="/logo.png"
+					alt="logo"
+					width={50}
+					height={50}
+				/>
+				<div className="flex flex-col items-start ">
+					<h3 className="text-text">Catherine Vuthi</h3>
+					<small>Web Developer & AWS Enthusiast</small>
+				</div>
+			</Link>
+
+			{/* Navigation */}
+			<div className="hidden items-center gap-8 laptop:flex">
+				{navLinks.map((menu) => (
 					<Link
 						href={menu.link}
-						key={index}
-						className={`hover:text-orange ${
+						key={menu.title}
+						className={`group relative font-medium text-sm transition-colors duration-300 ${
 							menu.title === 'Home'
-								? 'text-orange font-bold'
-								: 'hover:text-orange'
+								? 'text-primary'
+								: 'text-text hover:text-primary'
 						}`}
 					>
 						{menu.title}
+
+						{/* Animated underline */}
+						<span
+							className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-primary transition-all duration-300 ${
+								menu.title === 'Home' ? 'w-full' : 'w-0 group-hover:w-full'
+							}`}
+						/>
 					</Link>
 				))}
-			</div>
-			<Card className="w-12 h-12 text-orange">
-				<div className="tablet:hidden">
-					<Popup
-						trigger={(open) => (
-							<button className="button">
-								<MdMenu
-									size={30}
-									className="cursor-pointer"
-								/>
-							</button>
-						)}
-						position="left top"
-						closeOnDocumentClick
-						on={['hover', 'focus']}
-						{...{
-							contentStyle,
-							overlayStyle,
-							arrowStyle,
-						}}
-					>
-						<div className="flex flex-col gap-8 text-sm text-white p-3">
-							{menus.map((menu, index) => (
-								<Link
-									href={menu.link}
-									key={index}
-									className={`hover:text-orange  ${
-										menu.title === 'Home'
-											? 'text-orange font-bold'
-											: 'hover:text-orange'
-									}`}
-								>
-									{menu.title}
-								</Link>
-							))}
-						</div>
-					</Popup>
-				</div>
-				<MdMenu
-					size={30}
-					className="cursor-pointer hidden tablet:flex"
+				{/* CTA */}
+				<Button
+					text="Get a free quote"
+					href="#contact"
+					variant="primary"
+					icon={<FaArrowRight />}
 				/>
-			</Card>
-		</div>
+			</div>
+		</nav>
 	);
 };
 
