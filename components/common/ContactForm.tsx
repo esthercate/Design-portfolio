@@ -56,20 +56,20 @@ const ContactForm = (props: Props) => {
           type="text"
           placeholder="Name"
           name="from_name"
-          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
+          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-hidden"
           required
         />
         <input
           type="email"
           placeholder="Email"
           name="from_email"
-          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
+          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-hidden"
           required
         />
         <textarea
           placeholder="Message"
           name="message"
-          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-none"
+          className="border-b border-gray-300 mb-4 bg-bg-gray focus:outline-hidden"
           rows={2}
           required
         />

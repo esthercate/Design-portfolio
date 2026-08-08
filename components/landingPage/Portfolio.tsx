@@ -63,7 +63,7 @@ const Portfolio = (props: Props) => {
 									className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
 									alt={title}
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+								<div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
 									<div className="flex flex-wrap gap-2 justify-center">
 										{technologies.map((technology, index) => (
@@ -113,7 +113,7 @@ const Portfolio = (props: Props) => {
 												className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
 												alt={title}
 											/>
-											<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+											<div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 											<div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
 												<div className="flex flex-wrap gap-2 justify-center">
 													{technologies.map((technology, index) => (

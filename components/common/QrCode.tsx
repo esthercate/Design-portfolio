@@ -7,7 +7,7 @@ type Props = {}
 const QrCode = (props: Props) => {
   return (
 		<div className="w-full flex flex-col gap-3">
-			<div className="bg-white rounded-sm p-2 tablet:p-3">
+			<div className="bg-white rounded-xs p-2 tablet:p-3">
 				<Link
 					href="https://docs.google.com/document/d/1Rd0oVM54QdDfF1lvW03gvaRPf3G8fIYY-BICKgpkKvk/edit?usp=sharing"
 					target="_blank"
