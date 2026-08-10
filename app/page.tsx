@@ -6,18 +6,20 @@ import Resume from '../components/landingPage/Resume';
 import Services from '../components/landingPage/Services';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
+import AboutMe from '@/components/landingPage/AboutMe';
 
 export default function Home() {
 	return (
-		<main className="pt-6 max-w-7xl mx-auto">
+		<main>
 			<Navbar />
 			<Hero />
+			<AboutMe />
 			<Services />
-			<Resume />
+			{/* <Resume />
 			<Portfolio />
 			<Blog />
 			<Contact />
-			<Footer />
+			<Footer /> */}
 		</main>
 	);
 }
