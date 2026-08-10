@@ -1,9 +1,10 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import Button from '../ui/Button';
-import { FaArrowRight } from 'react-icons/fa6';
 import Image from 'next/image';
+import Button from '../ui/Button';
+import { FaArrowRight, FaBars, FaXmark } from 'react-icons/fa6';
 
 const navLinks = [
 	{
@@ -11,12 +12,12 @@ const navLinks = [
 		link: '/',
 	},
 	{
-		title: 'Services',
-		link: '#services',
-	},
-	{
 		title: 'About',
 		link: '#about',
+	},
+	{
+		title: 'Services',
+		link: '#services',
 	},
 	{
 		title: 'Projects',
@@ -33,54 +34,125 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+	const closeMenu = () => {
+		setIsMenuOpen(false);
+	};
+
 	return (
-		<nav className="flex items-center justify-between py-4">
-			{/* Logo */}
-			<Link
-				href="/"
-				className="flex items-center gap-3"
-			>
-				<Image
-					src="/logo.png"
-					alt="logo"
-					width={50}
-					height={50}
-				/>
-				<div className="flex flex-col items-start ">
-					<h3 className="text-text">Catherine Vuthi</h3>
-					<small>Web Developer & AWS Enthusiast</small>
-				</div>
-			</Link>
+		<nav className="relative z-50 w-full py-4">
+			{/* Navbar */}
+			<div className="container flex min-h-20 items-center  justify-between">
+				{/* Logo */}
+				<Link
+					href="/"
+					onClick={closeMenu}
+					className="flex items-center gap-3"
+				>
+					<Image
+						src="/images/logo.png"
+						alt="Catherine Vuthi"
+						width={48}
+						height={48}
+						priority
+					/>
 
-			{/* Navigation */}
-			<div className="hidden items-center gap-8 laptop:flex">
-				{navLinks.map((menu) => (
-					<Link
-						href={menu.link}
-						key={menu.title}
-						className={`group relative font-medium text-sm transition-colors duration-300 ${
-							menu.title === 'Home'
-								? 'text-primary'
-								: 'text-text hover:text-primary'
-						}`}
-					>
-						{menu.title}
+					<div className="">
+						<p className="text-sm font-semibold leading-tight text-text">
+							Catherine Vuthi
+						</p>
 
-						{/* Animated underline */}
-						<span
-							className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-primary transition-all duration-300 ${
-								menu.title === 'Home' ? 'w-full' : 'w-0 group-hover:w-full'
+						<span className="text-xs text-text-secondary">
+							Web Developer & AWS Enthusiast
+						</span>
+					</div>
+				</Link>
+
+				{/* Desktop Navigation */}
+				<div className="hidden items-center gap-3 desktop:gap-8 laptop:flex">
+					{navLinks.map((menu) => (
+						<Link
+							href={menu.link}
+							key={menu.title}
+							className={`group relative text-xs wide:text-sm font-medium transition-colors duration-300 ${
+								menu.title === 'Home'
+									? 'text-primary'
+									: 'text-text hover:text-primary'
 							}`}
+						>
+							{menu.title}
+
+							{/* Animated underline */}
+							<span
+								className={`absolute -bottom-2 left-0 h-0.5 rounded-full bg-primary transition-all duration-300 ${
+									menu.title === 'Home' ? 'w-full' : 'w-0 group-hover:w-full'
+								}`}
+							/>
+						</Link>
+					))}
+
+					{/* Desktop CTA */}
+					<Button
+						text="Get a free quote"
+						href="#contact"
+						variant="primary"
+						icon={<FaArrowRight />}
+					/>
+				</div>
+
+				{/* Mobile + Tablet Menu Button */}
+				<button
+					type="button"
+					onClick={() => setIsMenuOpen((prev) => !prev)}
+					aria-label={
+						isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'
+					}
+					aria-expanded={isMenuOpen}
+					className="flex h-10 w-10 items-center justify-center rounded-md text-text transition-colors duration-300 hover:bg-primary-soft hover:text-primary laptop:hidden"
+				>
+					{isMenuOpen ? (
+						<FaXmark className="text-xl" />
+					) : (
+						<FaBars className="text-xl" />
+					)}
+				</button>
+			</div>
+
+			{/* Mobile + Tablet Menu */}
+			<div
+				className={`overflow-hidden border-t border-border bg-background px-4 transition-all duration-300 laptop:hidden ${
+					isMenuOpen
+						? 'max-h-screen opacity-100'
+						: 'pointer-events-none max-h-0 opacity-0'
+				}`}
+			>
+				<div className="container-page flex flex-col gap-1 py-5">
+					{navLinks.map((menu) => (
+						<Link
+							href={menu.link}
+							key={menu.title}
+							onClick={closeMenu}
+							className={`rounded-md px-3 py-3 text-sm font-medium transition-colors duration-300 ${
+								menu.title === 'Home'
+									? 'bg-primary-soft text-primary'
+									: 'text-text hover:bg-primary-soft hover:text-primary'
+							}`}
+						>
+							{menu.title}
+						</Link>
+					))}
+
+					{/* Mobile + Tablet CTA */}
+					<div className="mt-3">
+						<Button
+							text="Get a free quote"
+							href="#contact"
+							variant="primary"
+							icon={<FaArrowRight />}
 						/>
-					</Link>
-				))}
-				{/* CTA */}
-				<Button
-					text="Get a free quote"
-					href="#contact"
-					variant="primary"
-					icon={<FaArrowRight />}
-				/>
+					</div>
+				</div>
 			</div>
 		</nav>
 	);

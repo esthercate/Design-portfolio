@@ -1,42 +1,55 @@
-import Image from "next/image";
-import React from "react";
-import SocialIcons from "../common/SocialIcons";
-import TechStack from "../common/TechStack";
-import { LinearGradient } from "react-text-gradients";
-import { FaArrowDown } from "react-icons/fa";
-import QrCode from "../common/QrCode";
-import Link from "next/link";
+import Image from 'next/image';
+import SocialIcons from '../common/SocialIcons';
+import { LinearGradient } from 'react-text-gradients';
+import Button from '../ui/Button';
+import { FaArrowRight } from 'react-icons/fa';
+import { BiMessageRoundedMinus } from 'react-icons/bi';
+import TrustedBy from '../ui/TrustedBy';
 
 type Props = {};
 
 const Hero = (props: Props) => {
-  return (
-		<div className="flex flex-col px-5 tablet:px-16 py-3 laptop:py-10">
-			<div className="w-full flex flex-col laptop:flex-row items-center justify-around gap-6">
-				<div className="flex flex-col gap-5 w-full laptop:w-1/2">
-					<div className="flex flex-col gap-1">
-						<p>Hello! I'm Catherine,</p>
+	return (
+		<section className="section">
+			<div className="container flex items-center justify-between">
+				<div className="flex flex-col gap-6">
+					<div className="flex items-center gap-1 bg-light-background rounded-full px-5 py-1 w-fit">
+						<p className="text-primary">👋 Hi, I'm Catherine</p>
 					</div>
-					<h1 className="text-xl tablet:text-3xl text-orange">Web Developer</h1>
-					<p className="tablet:pr-6">
-						I build websites that bring in more customers.
+					<h1>
+						I build modern websites that bring in{' '}
+						<span className="text-primary">more customers.</span>
+					</h1>
+					<p className="text text-balance">
+						I design and develop fast, responsive, and SEO-friendly websites
+						that turn visitors into customers nd help your business grow.
 					</p>
-					<div className="mt-6 flex flex-col laptop:flex-row w-full gap-y-4">
-						<SocialIcons />
-						{/* <TechStack /> */}
+					<div className="flex flex-col tablet:flex-row w-full gap-4">
+						<Button
+							variant="primary"
+							text="View My Work"
+							href="#projects"
+							icon={<FaArrowRight className="text-white" />}
+						/>
+						<Button
+							variant="secondary"
+							text="Let's Talk"
+							href="#contact"
+							icon={<BiMessageRoundedMinus className="text-xl" />}
+						/>
 					</div>
+					<TrustedBy />
 				</div>
 				<div className="flex">
-					<QrCode />
+					<Image
+						src="/images/hero.png"
+						alt="Hero"
+						width={500}
+						height={500}
+					/>
 				</div>
 			</div>
-			<Link
-				href="#services"
-				className="h-20 w-10 border-2 border-orange mt-20 m-auto rounded-full flex justify-center items-center animate-bounce"
-			>
-				<FaArrowDown className="text-orange" />
-			</Link>
-		</div>
+		</section>
 	);
 };
 
