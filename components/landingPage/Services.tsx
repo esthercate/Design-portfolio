@@ -1,33 +1,63 @@
-"use client";
+import { FaCode } from 'react-icons/fa';
+import { FaArrowsRotate } from 'react-icons/fa6';
+import { FaMagnifyingGlass, FaScrewdriverWrench } from 'react-icons/fa6';
+import ServiceCard from '../ui/ServiceCard';
+import SectionTitle from '../ui/SectionTitle';
 
-import React from 'react';
-type Props = {};
+const services = [
+	{
+		icon: FaCode,
+		title: 'Website Development',
+		description:
+			'Custom, modern and responsive websites tailored to your brand, business goals and customers.',
+	},
+	{
+		icon: FaArrowsRotate,
+		title: 'Website Redesign',
+		description:
+			'Transform an outdated website into a modern user-friendly experience that better represents your business.',
+	},
+	{
+		icon: FaScrewdriverWrench,
+		title: 'Website Maintenance',
+		description:
+			'Keep your website secure, up to date, fast, and running smoothly so you can focus on your business.',
+	},
+	{
+		icon: FaMagnifyingGlass,
+		title: 'SEO Optimization',
+		description:
+			'SEO-friendly websites that make you rank higher on search engines and get found online.',
+	},
+];
 
 const Services = () => {
 	return (
-		<div
-			className="bg-bg-gray py-10 tablet:py-16 px-5 tablet:px-36 flex flex-col gap-12"
+		<section
 			id="services"
+			className="section"
 		>
-			<div className="grid grid-cols-2 gap-4 w-full tablet:flex tablet:flex-row tablet:justify-around">
-				<div className="flex flex-col gap-1">
-					<h4 className="font-bold text-orange text-lg tablet:text-xl">3+</h4>
-					<p className="text-white/50 text-sm">Years of Experience</p>
-				</div>
-				<div className="flex flex-col gap-1">
-					<h4 className="font-bold text-orange text-lg tablet:text-xl">10+</h4>
-					<p className="text-white/50 text-sm">Completed Projects</p>
-				</div>
-				<div className="flex flex-col gap-1">
-					<h4 className="font-bold text-orange text-lg tablet:text-xl">12+</h4>
-					<p className="text-white/50 text-sm">Technologies Mastered</p>
-				</div>
-				<div className="flex flex-col gap-1">
-					<h4 className="font-bold text-orange text-lg tablet:text-xl">6+</h4>
-					<p className="text-white/50 text-sm">Happy Clients</p>
+			<div className="container flex flex-col gap-10">
+				<SectionTitle
+					title="Services I Offer"
+					description="Everything you need to establish a strong online presence."
+				/>
+				<div className="grid gap-4 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4">
+					{services.map((service) => {
+						const Icon = service.icon;
+
+						return (
+							<ServiceCard
+								key={service.title}
+								icon={<Icon size={24} />}
+								title={service.title}
+								description={service.description}
+							/>
+						);
+					})}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
