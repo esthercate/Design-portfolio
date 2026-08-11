@@ -10,9 +10,12 @@ type Props = {};
 
 const Hero = (props: Props) => {
 	return (
-		<section className="section">
-			<div className="container flex items-center justify-between">
-				<div className="flex flex-col gap-6">
+		<section
+			className="section bg-cover bg-center bg-no-repeat"
+			style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+		>
+			<div className="container flex flex-col gap-y-8 laptop:flex-row items-center justify-between w-full">
+				<div className="flex flex-col gap-6 w-full laptop:w-3/4">
 					<div className="flex items-center gap-1 bg-light-background rounded-full px-5 py-1 w-fit">
 						<p className="text-primary">👋 Hi, I'm Catherine</p>
 					</div>
@@ -42,10 +45,10 @@ const Hero = (props: Props) => {
 				</div>
 				<div className="flex">
 					<Image
-						src="/images/hero.png"
+						src="/images/myphoto1.png"
 						alt="Hero"
 						width={500}
-						height={500}
+						height={1000}
 					/>
 				</div>
 			</div>

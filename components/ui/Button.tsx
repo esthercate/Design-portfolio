@@ -14,7 +14,7 @@ export default function CTAButton({
 	icon,
 }: CTAButtonProps) {
 	const baseStyles =
-		'inline-flex w-full tablet:max-w-50 items-center justify-center gap-3 rounded-lg px-4 py-2 wide:px-5 wide:py-3 text-xs wide:text-sm font-medium cursor-pointer transition-all duration-300 shadow-md';
+		'inline-flex w-full tablet:max-w-50 items-center justify-center gap-3 rounded-lg px-4 wide:px-5 py-3 text-xs wide:text-sm font-medium cursor-pointer transition-all duration-300 shadow-md';
 
 	const variants = {
 		primary:

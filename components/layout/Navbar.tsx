@@ -12,16 +12,20 @@ const navLinks = [
 		link: '/',
 	},
 	{
-		title: 'About',
-		link: '#about',
-	},
-	{
 		title: 'Services',
 		link: '#services',
 	},
 	{
+		title: 'About',
+		link: '#about',
+	},
+	{
 		title: 'Projects',
 		link: '#projects',
+	},
+	{
+		title: 'Pricing',
+		link: '#pricing',
 	},
 	{
 		title: 'Testimonials',
