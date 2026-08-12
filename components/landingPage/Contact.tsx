@@ -8,38 +8,22 @@ type Props = {}
 const Contact = (props: Props) => {
   return (
 		<div
-			className="bg-bg-gray py-10 tablet:py-28 px-5 tablet:px-16 flex flex-col gap-4"
+			className="section bg-primary"
 			id="contact"
 		>
-			<div className="flex flex-col gap-4 w-full">
-				<h6>Contact</h6>
-			</div>
-			<div className="w-full flex flex-col laptop:flex-row gap-5 justify-between">
-				<div className="w-full laptop:w-1/2 flex flex-col gap-8">
-					<h1 className="capitalize">Get in Touch!</h1>
-					<p className="pr-2 laptop:pr-32">
-						Feel free to contact me any time. I will get back to you as soon as
-						I can!
+			<div className="container flex">
+				<div className="flex flex-col gap-3">
+					<p className="text-primary-soft">Let's Work Together</p>
+					<h2 className="text-white">Have a projects in mind?</h2>
+					<h2 className="text-white">Let's talk.</h2>
+					<p className="flex flex-col text-primary-soft">
+						I'm currently available for new projects. Send me a message and I'll
+						get back to you soon.
+						<span>Quick response via whatsApp and phone call.</span>
 					</p>
-					<div className="flex flex-col gap-2">
-						<h3>Address</h3>
-						<p>Nairobi, Kenya</p>
-					</div>
-					<div className="flex flex-col gap-2">
-						<h3>E-mail</h3>
-						<p>catherinev.codes@gmail.com</p>
-					</div>
 				</div>
-				<div className="w-full laptop:w-1/2 mt-3 laptop:mt-o">
-					<ContactForm />
-				</div>
+				{/* <ContactForm /> */}
 			</div>
-			<Link
-				href="/"
-				className="h-20 w-10 border-2 border-orange mt-20 m-auto rounded-full flex justify-center items-center animate-bounce"
-			>
-				<FaArrowDown className="text-orange rotate-180" />
-			</Link>
 		</div>
 	);
 }

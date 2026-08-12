@@ -24,10 +24,6 @@ const navLinks = [
 		link: '#projects',
 	},
 	{
-		title: 'Pricing',
-		link: '#pricing',
-	},
-	{
 		title: 'Testimonials',
 		link: '#testimonials',
 	},
