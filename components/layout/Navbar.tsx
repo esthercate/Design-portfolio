@@ -2,36 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Button from '../ui/Button';
 import { FaArrowRight, FaBars, FaXmark } from 'react-icons/fa6';
-
-const navLinks = [
-	{
-		title: 'Home',
-		link: '/',
-	},
-	{
-		title: 'Services',
-		link: '#services',
-	},
-	{
-		title: 'About',
-		link: '#about',
-	},
-	{
-		title: 'Projects',
-		link: '#projects',
-	},
-	{
-		title: 'Testimonials',
-		link: '#testimonials',
-	},
-	{
-		title: 'Contact',
-		link: '#contact',
-	},
-];
+import Logo from '../ui/Logo';
+import { navLinks } from './navLinks';
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,29 +19,7 @@ const Navbar = () => {
 			{/* Navbar */}
 			<div className="container flex min-h-20 items-center  justify-between">
 				{/* Logo */}
-				<Link
-					href="/"
-					onClick={closeMenu}
-					className="flex items-center gap-3"
-				>
-					<Image
-						src="/images/logo.png"
-						alt="Catherine Vuthi"
-						width={48}
-						height={48}
-						priority
-					/>
-
-					<div className="">
-						<p className="text-sm font-semibold leading-tight text-text">
-							Catherine Vuthi
-						</p>
-
-						<span className="text-xs text-text-secondary">
-							Web Developer & AWS Enthusiast
-						</span>
-					</div>
-				</Link>
+				<Logo />
 
 				{/* Desktop Navigation */}
 				<div className="hidden items-center gap-3 desktop:gap-8 laptop:flex">

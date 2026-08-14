@@ -1,4 +1,5 @@
 export type ProjectCategory = 'web' | 'aws';
+export type ProjectFilter = 'all' | ProjectCategory;
 
 export type Project = {
   id: number;
@@ -10,6 +11,24 @@ export type Project = {
   liveUrl: string;
   githubUrl?: string;
 };
+
+export const projectFilters: {
+	label: string;
+	value: ProjectFilter;
+}[] = [
+	{
+		label: 'All Projects',
+		value: 'all',
+	},
+	{
+		label: 'Web Development',
+		value: 'web',
+	},
+	{
+		label: 'AWS Projects',
+		value: 'aws',
+	},
+];
 
 export const projects: Project[] = [
   {

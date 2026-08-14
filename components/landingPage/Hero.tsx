@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import SocialIcons from '../common/SocialIcons';
-import { LinearGradient } from 'react-text-gradients';
 import Button from '../ui/Button';
 import { FaArrowRight } from 'react-icons/fa';
 import { BiMessageRoundedMinus } from 'react-icons/bi';

@@ -17,6 +17,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					fill
 					sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
 					className="object-cover transition-transform duration-500 group-hover:scale-105"
+					loading="eager"
 				/>
 			</div>
 
@@ -31,7 +32,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				</div>
 
 				{/* Technologies */}
-				<div className='flex justify-between'>
+				<div className="flex justify-between">
 					<div className="flex flex-wrap gap-2">
 						{project.technologies.slice(0, 3).map((technology) => (
 							<span

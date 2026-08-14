@@ -5,28 +5,15 @@ import { FaArrowRight } from 'react-icons/fa6';
 
 import ProjectCard from '../ui/ProjectCard';
 import SectionTitle from '../ui/SectionTitle';
-import { projects, type ProjectCategory } from '../../lib/portfolio-data';
+import {
+	projectFilters,
+	projects,
+	type ProjectCategory,
+} from '../../lib/portfolio-data';
 import Button from '../ui/Button';
+import FilterButtons from '../ui/FilterButtons';
 
 type Filter = 'all' | ProjectCategory;
-
-const filters: {
-	label: string;
-	value: Filter;
-}[] = [
-	{
-		label: 'All Projects',
-		value: 'all',
-	},
-	{
-		label: 'Web Development',
-		value: 'web',
-	},
-	{
-		label: 'AWS Projects',
-		value: 'aws',
-	},
-];
 
 const Projects = () => {
 	const [activeFilter, setActiveFilter] = useState<Filter>('all');
@@ -47,29 +34,16 @@ const Projects = () => {
 				{/* Section heading */}
 				<SectionTitle
 					title="Recent Projects"
-					description="A selection of projects I've built to solve problems, create better experiences, and help businesses grow."
+					description="A selection of websites I've designed and built for clients.."
 				/>
 
 				{/* Filters */}
-				<div className="mt-8 flex flex-wrap justify-center gap-2">
-					{filters.map((filter) => {
-						const isActive = activeFilter === filter.value;
-
-						return (
-							<button
-								key={filter.value}
-								type="button"
-								onClick={() => setActiveFilter(filter.value)}
-								className={`rounded-lg px-5 py-2.5 text-xs font-semibold transition-all duration-300 ${
-									isActive
-										? 'bg-linear-to-r from-primary to-primary-dark text-white shadow-md'
-										: 'border border-border bg-background text-text hover:border-primary hover:text-primary'
-								}`}
-							>
-								{filter.label}
-							</button>
-						);
-					})}
+				<div className="mt-10">
+					<FilterButtons
+						filters={projectFilters}
+						activeFilter={activeFilter}
+						onFilterChange={setActiveFilter}
+					/>
 				</div>
 
 				{/* Project Cards */}
