@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Footer from '../components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
+import WhatsAppButton from '@/components/ui/WhatsAppButton';
 
 const poppins = Poppins({
 	subsets: ['latin'],
@@ -28,7 +29,10 @@ export default function RootLayout({
 		>
 			<body className={`${poppins.className} flex min-h-screen flex-col`}>
 				<Navbar />
-				<main className="flex-1">{children}</main>
+				<main className="flex-1">
+					{children}
+					<WhatsAppButton />
+				</main>
 
 				<Footer />
 			</body>

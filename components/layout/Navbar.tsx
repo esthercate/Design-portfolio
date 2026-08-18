@@ -15,7 +15,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="relative z-50 w-full py-4">
+		<nav className="z-50 w-full py-2 fixed bg-background/95">
 			{/* Navbar */}
 			<div className="container flex min-h-20 items-center  justify-between">
 				{/* Logo */}

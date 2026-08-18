@@ -29,7 +29,7 @@ const Footer = (props: Props) => {
 								<a
 									key={social.id}
 									href={social.url}
-									className="border border-border p-2 rounded-full"
+									className="border border-border p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:bg-green-600"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -78,7 +78,7 @@ const Footer = (props: Props) => {
 							</span>
 							<span className="flex gap-2 items-center">
 								<MdOutlineMarkEmailRead size={20} />
-								catherinev.code@gmail.com
+								catherinev.codes@gmail.com
 							</span>
 							<span className="flex gap-2 items-center">
 								<MdOutlinePhone size={20} />
@@ -87,9 +87,9 @@ const Footer = (props: Props) => {
 						</div>
 					</div>
 				</div>
-				<div className="w-full text-center">
+				<div className="w-full text-center border-t border-border/20 pt-8">
 					<small className="text-border">
-						Copyright © {new Date().getFullYear()} - All right reserved.
+						Copyright © {new Date().getFullYear()} - All rights reserved.
 					</small>
 				</div>
 			</div>

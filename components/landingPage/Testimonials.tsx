@@ -31,7 +31,7 @@ const Testimonials = () => {
 			{/* Testimonial rows */}
 			<div className="mt-12 flex flex-col gap-4">
 				{/* Top row → */}
-				<div className="group overflow-hidden">
+				<div className="group overflow-hidden pt-1">
 					<div className="testimonial-marquee-right flex w-max gap-4 group-hover:[animation-play-state:paused]">
 						{firstRowLoop.map((testimonial, index) => (
 							<TestimonialCard
@@ -43,7 +43,7 @@ const Testimonials = () => {
 				</div>
 
 				{/* Bottom row ← */}
-				<div className="group overflow-hidden">
+				<div className="group overflow-hidden pt-1">
 					<div className="testimonial-marquee-left flex w-max gap-4 group-hover:[animation-play-state:paused]">
 						{secondRowLoop.map((testimonial, index) => (
 							<TestimonialCard

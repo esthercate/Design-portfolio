@@ -6,7 +6,6 @@ import Projects from '@/components/landingPage/Projects';
 import Cta from '@/components/ui/Cta';
 import Testimonials from '@/components/landingPage/Testimonials';
 import Blog from '@/components/landingPage/Blog';
-import Navbar from '../components/layout/Navbar';
 
 export default function Home() {
 	return (

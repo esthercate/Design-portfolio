@@ -17,9 +17,12 @@ const AllProjects = () => {
 			: projects.filter((project) => project.categories.includes(activeFilter));
 
 	return (
-		<section className='section'>
+		<section className="section mt-24">
 			<div className="flex flex-col gap-10 container ">
-				<SectionTitle title='My Work' description="A selection of websites I've designed and built for my clients" />
+				<SectionTitle
+					title="My Work"
+					description="A selection of websites I've designed and built for my clients"
+				/>
 				{/* Filters */}
 				<div className="mt-8">
 					<FilterButtons

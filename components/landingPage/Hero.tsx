@@ -9,7 +9,7 @@ type Props = {};
 const Hero = (props: Props) => {
 	return (
 		<section
-			className="section bg-cover bg-center bg-no-repeat"
+			className="section bg-cover bg-center bg-no-repeat mt-24"
 			style={{ backgroundImage: "url('/images/bg-image.png')" }}
 		>
 			<div className="container flex flex-col gap-y-8 laptop:flex-row items-center justify-between w-full">

@@ -1,35 +1,8 @@
-import { FaCode } from 'react-icons/fa';
-import { FaArrowsRotate } from 'react-icons/fa6';
-import { FaMagnifyingGlass, FaScrewdriverWrench } from 'react-icons/fa6';
 import ServiceCard from '../ui/ServiceCard';
 import SectionTitle from '../ui/SectionTitle';
-
-const services = [
-	{
-		icon: FaCode,
-		title: 'Website Development',
-		description:
-			'Custom, modern and responsive websites tailored to your brand, business goals and customers.',
-	},
-	{
-		icon: FaArrowsRotate,
-		title: 'Website Redesign',
-		description:
-			'Transform an outdated website into a modern user-friendly experience that better represents your business.',
-	},
-	{
-		icon: FaScrewdriverWrench,
-		title: 'Website Maintenance',
-		description:
-			'Keep your website secure, up to date, fast, and running smoothly so you can focus on your business.',
-	},
-	{
-		icon: FaMagnifyingGlass,
-		title: 'SEO Optimization',
-		description:
-			'SEO-friendly websites that make you rank higher on search engines and get found online.',
-	},
-];
+import { services, websiteTypes } from '@/lib/services-data';
+import { FaArrowRight, FaRegCheckSquare } from 'react-icons/fa';
+import Button from '../ui/Button';
 
 const Services = () => {
 	return (
@@ -37,9 +10,9 @@ const Services = () => {
 			id="services"
 			className="section"
 		>
-			<div className="container flex flex-col gap-10">
+			<div className="container flex flex-col gap-12 items-center">
 				<SectionTitle
-					title="Services I Offer"
+					title="What I Do"
 					description="Everything you need to establish a strong online presence."
 				/>
 				<div className="grid gap-4 tablet:grid-cols-2 laptop:grid-cols-3 desktop:grid-cols-4">
@@ -56,6 +29,34 @@ const Services = () => {
 						);
 					})}
 				</div>
+				<div className="flex flex-col gap-6">
+					<h3 className="text-center">Website Types</h3>
+					<div className="grid gap-4 tablet:grid-cols-3 laptop:grid-cols-4">
+						{websiteTypes.map((website) => {
+							return (
+								<div
+									key={website.title}
+									className="flex gap-3"
+								>
+									<FaRegCheckSquare
+										size={25}
+										className="text-primary"
+									/>
+									<div>
+										<h6>{website.title}</h6>
+										<small>{website.description}</small>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+				<Button
+					variant="primary"
+					text="Learn More"
+					href="/services"
+					icon={<FaArrowRight className="text-white text-lg" />}
+				/>
 			</div>
 		</section>
 	);

@@ -102,7 +102,7 @@
   }
 
   .section {
-    @apply py-10 tablet:py-14 laptop:py-16;
+    @apply py-10 tablet:py-14 laptop:py-16 scroll-mt-24;
   }
 }
 
@@ -135,7 +135,7 @@
   }
 
   h6 {
-    @apply text-sm font-semibold uppercase tracking-wide text-primary;
+    @apply text-sm font-semibold tracking-wide text-primary;
   }
 
   p {
