@@ -23,8 +23,8 @@ const AboutMe = (props: Props) => {
 					/>
 					<Button
 						variant="primary"
-						text="More About Me"
-						href="#projects"
+						text="View My Resume"
+						href="/resume"
 						icon={<FaRegUser className="text-white text-lg" />}
 					/>
 				</div>

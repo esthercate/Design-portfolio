@@ -5,6 +5,7 @@ import { projectFilters, projects, type ProjectCategory } from '../../lib/portfo
 import ProjectCard from '../ui/ProjectCard';
 import FilterButtons from '../ui/FilterButtons';
 import SectionTitle from '../ui/SectionTitle';
+import PageHero from '../ui/PageHero';
 
 type Filter = 'all' | ProjectCategory;
 
@@ -17,12 +18,13 @@ const AllProjects = () => {
 			: projects.filter((project) => project.categories.includes(activeFilter));
 
 	return (
-		<section className="section mt-24">
-			<div className="flex flex-col gap-10 container ">
-				<SectionTitle
-					title="My Work"
-					description="A selection of websites I've designed and built for my clients"
-				/>
+		<section className="section mt-8">
+			<PageHero
+				title="My Work"
+				currentPage="Projects"
+			/>
+
+			<div className="flex flex-col gap-6 container">
 				{/* Filters */}
 				<div className="mt-8">
 					<FilterButtons

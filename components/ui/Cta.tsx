@@ -17,7 +17,7 @@ const Cta = (props: Props) => {
 				</div>
 				<Button
 					variant="secondary"
-					text="Let’s Build your Website"
+					text="Let’s Build Something"
 					href="#contact"
 					icon={<FaArrowRight className="text-lg" />}
 				/>

@@ -46,7 +46,7 @@ const Navbar = () => {
 
 					{/* Desktop CTA */}
 					<Button
-						text="Get a free quote"
+						text="Get a Free Quote"
 						href="#contact"
 						variant="primary"
 						icon={<FaArrowRight />}
@@ -98,7 +98,7 @@ const Navbar = () => {
 					{/* Mobile + Tablet CTA */}
 					<div className="mt-3">
 						<Button
-							text="Get a free quote"
+							text="Get a Free Quote"
 							href="#contact"
 							variant="primary"
 							icon={<FaArrowRight />}

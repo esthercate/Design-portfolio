@@ -27,7 +27,7 @@ const Blog = (props: Props) => {
 				</div>
 
 				{/* View all */}
-				<div className="flex justify-center">
+				{/* <div className="flex justify-center">
 					<Link
 						href="/blogs"
 						target="_blank"
@@ -37,7 +37,7 @@ const Blog = (props: Props) => {
 						View all articles
 						<FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
 					</Link>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

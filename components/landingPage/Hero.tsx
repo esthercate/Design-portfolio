@@ -22,21 +22,22 @@ const Hero = (props: Props) => {
 						<span className="text-primary">more customers.</span>
 					</h1>
 					<p className="text text-balance">
-						I design and develop fast, responsive, and SEO-friendly websites
-						that turn visitors into customers nd help your business grow.
+						I build fast, responsive, and custom web applications designed to
+						turn visitors into customers, generate leads and drive business
+						growth.
 					</p>
 					<div className="flex flex-col tablet:flex-row w-full gap-4">
 						<Button
 							variant="primary"
-							text="View My Work"
-							href="#projects"
-							icon={<FaArrowRight className="text-white" />}
+							text="Get in Touch"
+							href="#contact"
+							icon={<BiMessageRoundedMinus className="text-xl" />}
 						/>
 						<Button
 							variant="secondary"
-							text="Let's Talk"
-							href="#contact"
-							icon={<BiMessageRoundedMinus className="text-xl" />}
+							text="View My Work"
+							href="#projects"
+							icon={<FaArrowRight className="text-white" />}
 						/>
 					</div>
 					<TrustedBy />
