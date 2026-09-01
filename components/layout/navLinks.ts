@@ -15,10 +15,10 @@ export const navLinks = [
 		title: 'Projects',
 		link: '/#projects',
 	},
-	{
-		title: 'Testimonials',
-		link: '/#testimonials',
-	},
+	// {
+	// 	title: 'Testimonials',
+	// 	link: '/#testimonials',
+	// },
 	{
 		title: 'Contact',
 		link: '/#contact',

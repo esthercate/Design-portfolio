@@ -8,7 +8,7 @@ const SectionTitle = ({ title, description }: SectionTitleProps) => {
 		<div className="flex flex-col items-center text-center gap-2">
 			<h2>{title}</h2>
 			<span className="h-1 w-12 bg-primary" />
-			<p>{description}</p>
+			<p className="max-w-xl">{description}</p>
 		</div>
 	);
 };

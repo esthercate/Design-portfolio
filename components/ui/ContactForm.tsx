@@ -58,8 +58,8 @@ const ContactForm = (props: Props) => {
 						required
 					/>
 					<input
-						type="email"
-						placeholder="Email Address"
+						type="text"
+						placeholder="Email or Phone Number"
 						name="from_email"
 						className="bg-background px-4 py-2 rounded-lg w-full"
 						required
@@ -75,7 +75,7 @@ const ContactForm = (props: Props) => {
 				/>
 				<button
 					type="submit"
-					className="flex w-fit items-center gap-2 rounded-lg bg-black px-6 py-2 text-white transition-colors duration-300 hover:text-white"
+					className="flex w-fit items-center gap-2 rounded-lg bg-black px-6 py-2 text-white transition-colors duration-300 hover:text-white cursor-pointer"
 				>
 					<span>Send Message</span>
 					<IoIosSend />

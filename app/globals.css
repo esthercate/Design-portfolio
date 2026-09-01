@@ -139,7 +139,7 @@
   }
 
   p {
-    @apply text-xs tablet:text-sm desktop:text-base
+    @apply text-sm tablet:text-base
       font-normal leading-7 text-text-secondary;
   }
 

@@ -5,6 +5,10 @@ import TestimonialCard from '../ui/TestimonialCard';
 import SectionTitle from '../ui/SectionTitle';
 
 const Testimonials = () => {
+	if (!testimonials || testimonials.length === 0) {
+		return null;
+	}
+	
 	const firstRow = testimonials.slice(0, 4);
 	const secondRow = testimonials.slice(4);
 

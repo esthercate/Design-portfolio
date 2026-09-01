@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				{/* Technologies */}
 				<div className="flex justify-between">
 					<div className="flex flex-wrap gap-2">
-						{project.technologies.slice(0, 3).map((technology) => (
+						{project.technologies.slice(0, 4).map((technology) => (
 							<span
 								key={technology}
 								className="flex items-center px-2.5 py-1 rounded-full bg-light-background text-xs font-medium text-primary"

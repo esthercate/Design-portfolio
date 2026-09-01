@@ -5,6 +5,9 @@ type CTAButtonProps = {
 	href: string;
 	variant?: 'primary' | 'secondary';
 	icon?: ReactNode;
+	newTab?: boolean;
+	target?: string;
+	rel?: string;
 };
 
 export default function CTAButton({
@@ -12,9 +15,12 @@ export default function CTAButton({
 	href,
 	variant = 'primary',
 	icon,
+	newTab = false,
+	target,
+	rel,
 }: CTAButtonProps) {
 	const baseStyles =
-		'inline-flex w-full tablet:max-w-fit items-center justify-center gap-3 rounded-lg px-4 wide:px-6 py-3 text-sm wide:text-base font-semibold cursor-pointer transition-all duration-300 shadow-md';
+		'inline-flex w-full tablet:max-w-fit items-center justify-center gap-3 rounded-lg px-4 wide:px-6 py-3 text-sm font-semibold cursor-pointer transition-all duration-300 shadow-md';
 
 	const variants = {
 		primary:
@@ -27,15 +33,17 @@ export default function CTAButton({
 	return (
 		<a
 			href={href}
+			target={target || (newTab ? '_blank' : undefined)}
+			rel={rel || (newTab ? 'noopener noreferrer' : undefined)}
 			className={`${baseStyles} ${variants[variant]}`}
 		>
 			<span>{text}</span>
 
 			{icon && (
-  <span className="flex items-center transition-transform duration-300 group-hover:translate-x-1">
-    {icon}
-  </span>
-)}
+				<span className="flex items-center transition-transform duration-300 group-hover:translate-x-1">
+					{icon}
+				</span>
+			)}
 		</a>
 	);
 }

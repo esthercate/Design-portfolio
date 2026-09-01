@@ -1,3 +1,4 @@
+import { FaUser } from 'react-icons/fa';
 import type { Testimonial } from '../../lib/testimonials';
 
 type TestimonialCardProps = {
@@ -43,22 +44,27 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
 			</div>
 
 			{/* Client */}
-			<div className='flex flex-col'>
-				<p
-					className={`text-sm font-semibold ${
-						isDark ? 'text-white' : 'text-text'
-					}`}
-				>
-					{testimonial.name}
-				</p>
+			<div className="flex items-center gap-2">
+				<div className="size-8 rounded-full bg-primary-soft text-white flex items-center justify-center border border-primary/30 shadow-sm">
+					<p>{testimonial.name.charAt(0)}</p>
+				</div>
+				<div className="flex flex-col">
+					<p
+						className={`text-sm font-semibold ${
+							isDark ? 'text-white' : 'text-text'
+						}`}
+					>
+						{testimonial.name}
+					</p>
 
-				<p
-					className={`text-xs ${
-						isDark ? 'text-white/60' : 'text-text-secondary'
-					}`}
-				>
-					{testimonial.role}
-				</p>
+					<span
+						className={`text-xs ${
+							isDark ? 'text-white/60' : 'text-text-secondary'
+						}`}
+					>
+						{testimonial.role}
+					</span>
+				</div>
 			</div>
 		</article>
 	);

@@ -23,7 +23,7 @@ const Projects = () => {
 			? projects
 			: projects.filter((project) => project.categories.includes(activeFilter));
 
-	const displayedProjects = filteredProjects.slice(0, 3);
+	const displayedProjects = filteredProjects.slice(0, 6);
 
 	return (
 		<section
@@ -66,14 +66,16 @@ const Projects = () => {
 				)}
 
 				{/* View All */}
-				<div className="mt-10 flex justify-center">
-					<Button
-						variant="primary"
-						text="View All Projects"
-						href="/projects"
-						icon={<FaArrowRight className="text-white text-lg" />}
-					/>
-				</div>
+				{displayedProjects.length > 6 && (
+					<div className="mt-10 flex justify-center">
+						<Button
+							variant="primary"
+							text="View All Projects"
+							href="/projects"
+							icon={<FaArrowRight className="text-white text-lg" />}
+						/>
+					</div>
+				)}
 			</div>
 		</section>
 	);

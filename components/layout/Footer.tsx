@@ -82,7 +82,7 @@ const Footer = (props: Props) => {
 							</span>
 							<span className="flex gap-2 items-center">
 								<MdOutlinePhone size={20} />
-								+254 700 111 222
+								+254 181 244 759
 							</span>
 						</div>
 					</div>
