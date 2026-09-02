@@ -39,7 +39,7 @@ const Services = () => {
 
 				<Button
 					variant="primary"
-					text="See Details"
+					text="See More Details"
 					href="/services"
 					icon={<FaArrowRight className="text-white text-lg" />}
 				/>

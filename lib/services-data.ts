@@ -33,10 +33,10 @@ import {
 export const baseInclusions = [
 	'Mobile-first, Responsive Design',
 	'SEO-Optimized',
-	'WhatsApp Integration',
 	'Contact Form/Lead Forms',
-	'Social Media Integration',
+	'WhatsApp Integration',
 	'Hosting & Domain Setup',
+	'Social Media Integration',
 	'Google Analytics & Search Console Setup',
 	'3 Months Free Support',
 	'Optional monthly maintenance retainer',

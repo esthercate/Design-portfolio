@@ -79,10 +79,10 @@ export const projects: Project[] = [
 	},
 	{
 		id: 5,
-		image: '/images/portfolioimg.png',
+		image: '/images/portfolio-new.png',
 		title: 'Modern Portfolio Website',
 		description:
-			'A modern portfolio website designed to showcase software engineering experience, projects, and services.',
+			'A modern web developer portfolio that highlights technical expertise, impactful projects, and digital solutions built to solve real-world problems.',
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'EmailJS'],
 		categories: ['web'],
 		liveUrl: '/',

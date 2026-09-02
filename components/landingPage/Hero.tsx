@@ -42,13 +42,19 @@ const Hero = (props: Props) => {
 					</div>
 					<TrustedBy />
 				</div>
-				<div className="flex">
+				<div className="flex relative">
 					<Image
-						src="/images/myphoto1.png"
+						src="/images/heroimg.png"
 						alt="Hero"
-						width={500}
-						height={1000}
+						width={650}
+						height={500}
 					/>
+					<div className="absolute bottom-8 tablet:bottom-16 right-2 tablet:right-[-100] bg-white/80 rounded-md max-w-40 p-4 flex flex-col gap-2 shadow-2xl">
+						<small className="font-medium">
+							Building digital experiences that make an impact.
+						</small>
+						<div className="w-1/4 h-1 bg-primary" />
+					</div>
 				</div>
 			</div>
 		</section>

@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Button from '../ui/Button';
-import { FaRegUser } from 'react-icons/fa6';
-import { aboutPhoto, highlights, techStack } from '@/lib/about-data';
+import { FaFileDownload } from 'react-icons/fa';
+import { aboutPhoto, highlights } from '@/lib/about-data';
 
 const AboutMe = () => {
-	return (
+  return (
 		<section
 			id="about"
 			className="section bg-light-background"
@@ -18,6 +18,7 @@ const AboutMe = () => {
 						height={800}
 						className="rounded-lg"
 					/>
+
 					<Button
 						variant="primary"
 						text="View My Resume"
@@ -25,12 +26,13 @@ const AboutMe = () => {
 							'https://docs.google.com/document/d/1eucEq29w4fc8iu8ph6ud3LZsmxUY4rpbgOrNuq5iLbs/edit?usp=sharing'
 						}
 						newTab
-						icon={<FaRegUser className="text-white text-lg" />}
+						icon={<FaFileDownload className="text-white text-lg" />}
 					/>
 				</div>
 
 				<div className="flex flex-col gap-4 w-full laptop:w-2/3">
 					<span className="text-primary font-semibold">ABOUT ME</span>
+
 					<h2>The story behind the code</h2>
 
 					<div className="flex flex-col gap-2">
@@ -46,7 +48,6 @@ const AboutMe = () => {
 							to establish credibility, reach more customers, and support their
 							growth.
 						</p>
-
 						<p>
 							It wasn&apos;t always the plan. Growing up, I wanted to become{' '}
 							<span className="font-semibold text-primary">a pilot</span>. I
@@ -56,35 +57,20 @@ const AboutMe = () => {
 							<span className="font-semibold text-primary">
 								web development
 							</span>
-							: solving problems, and turning ideas into things people actually
+							: solving problems and turning ideas into things people actually
 							use. Today, that&apos;s what drives every project, creating{' '}
 							<span className="font-semibold text-text">
 								fast, responsive, accessible websites built with a purpose.
 							</span>
 						</p>
+						<p>
+							When I'm not coding, you'll probably find me outdoors. I enjoy
+							hiking and exploring the nature. These activities keep me active,
+							clear my mind, and teach me the patience and consistency I bring
+							to everything I do.
+						</p>
 					</div>
 
-					<div className="flex flex-col gap-3">
-						<div className="flex flex-wrap gap-2 items-center">
-							<small className="font-semibold text-text">Built With: </small>
-							{techStack.map((tech) => {
-								const Icon = tech.icon;
-
-								return (
-									<span
-										key={tech.name}
-										className="flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-xs font-medium text-text"
-									>
-										<Icon
-											className="text-primary"
-											size={16}
-										/>
-										{tech.name}
-									</span>
-								);
-							})}
-						</div>
-					</div>
 					<div className="flex flex-col tablet:flex-row justify-between gap-y-3">
 						{highlights.map((item) => {
 							const Icon = item.icon;

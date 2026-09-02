@@ -22,31 +22,38 @@ const ServiceCard = ({
 			<div className="flex h-15 w-15 items-center justify-center rounded-lg bg-primary-soft text-primary">
 				{icon}
 			</div>
-
 			{/* Content */}
 			<div className="flex flex-col gap-2">
 				<h3>{title}</h3>
 				<p>{description}</p>
 			</div>
-
-			{/* Inclusions */}
 			{features && features.length > 0 && (
-				<div className="grid grid-cols-2 gap-x-4 gap-y-2 border-t border-border pt-4">
-					{features.map((feature) => (
-						<div
-							key={feature}
-							className="flex items-center gap-2"
+				<div className="pt-4">
+					<div className="grid grid-cols-2 gap-x-4 gap-y-2">
+						{features.slice(0, 4).map((feature) => (
+							<div
+								key={feature}
+								className="flex items-center gap-2"
+							>
+								<FaRegCheckCircle
+									className="shrink-0 text-primary"
+									size={14}
+								/>
+								<small>{feature}</small>
+							</div>
+						))}
+					</div>
+
+					{features.length > 4 && (
+						<a
+							href="/services"
+							className="inline-block mt-3 text-sm text-primary font-medium hover:underline hover:text-primary-dark"
 						>
-							<FaRegCheckCircle
-								className="shrink-0 text-primary"
-								size={14}
-							/>
-							<small>{feature}</small>
-						</div>
-					))}
+							And many more... →
+						</a>
+					)}
 				</div>
 			)}
-
 			{/* Related website types */}
 			{relatedTypes && relatedTypes.length > 0 && (
 				<div className="flex flex-col gap-2 border-t border-border pt-4">

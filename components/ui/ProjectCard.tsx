@@ -10,13 +10,13 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 	return (
 		<article className="group overflow-hidden rounded-xl border border-border bg-background shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 			{/* Project Image */}
-			<div className="relative aspect-[16/10] overflow-hidden bg-light-background">
+			<div className="relative aspect-16/10 overflow-hidden bg-light-background">
 				<Image
 					src={project.image}
 					alt={project.title}
 					fill
 					sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
-					className="object-cover transition-transform duration-500 group-hover:scale-105"
+					className="object-cover	 transition-transform duration-500 group-hover:scale-105 w-full h-full"
 					loading="eager"
 				/>
 			</div>
