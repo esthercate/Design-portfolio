@@ -1,10 +1,30 @@
+import type { Metadata } from 'next';
 import AllServices from '@/components/servicesPage/AllServices';
 import Cta from '@/components/ui/Cta';
 
-type Props = {}
+export const metadata: Metadata = {
+	title: 'Services',
+	description:
+		'Custom website development and website redesigns for local businesses. Every project includes responsive design, SEO optimization, WhatsApp integration, hosting setup, and more.',
+	keywords: [
+		'website development services',
+		'website redesign Nairobi',
+		'custom website Kenya',
+		'small business website design',
+		'portfolio websites developer',
+		'responsive web design services',
+		'landing pages development Nairobi',
+		'business website development',
+		'seo optmized websites',
+		'pwa website developer Nairobi',
+		'progessive web application developer',
+		'cms integration services',
+		'website copywriting Nairobi',
+	],
+};
 
-const ServicesPage = (props: Props) => {
-  return (
+const ServicesPage = () => {
+	return (
 		<div>
 			<AllServices />
 			<Cta
@@ -15,6 +35,6 @@ const ServicesPage = (props: Props) => {
 			/>
 		</div>
 	);
-}
+};
 
 export default ServicesPage;
