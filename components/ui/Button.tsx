@@ -6,8 +6,7 @@ type CTAButtonProps = {
 	variant?: 'primary' | 'secondary';
 	icon?: ReactNode;
 	newTab?: boolean;
-	target?: string;
-	rel?: string;
+	onClick?: () => void;
 };
 
 export default function CTAButton({
@@ -16,11 +15,10 @@ export default function CTAButton({
 	variant = 'primary',
 	icon,
 	newTab = false,
-	target,
-	rel,
+	onClick,
 }: CTAButtonProps) {
 	const baseStyles =
-		'inline-flex w-full tablet:max-w-fit items-center justify-center gap-3 rounded-lg px-4 wide:px-6 py-3 text-sm font-semibold cursor-pointer transition-all duration-300 shadow-md';
+		'inline-flex w-full tablet:max-w-fit items-center justify-center gap-3 rounded-lg px-4 wide:px-6 py-3 text-sm wide:text-base font-semibold cursor-pointer transition-all duration-300 shadow-md';
 
 	const variants = {
 		primary:
@@ -33,8 +31,9 @@ export default function CTAButton({
 	return (
 		<a
 			href={href}
-			target={target || (newTab ? '_blank' : undefined)}
-			rel={rel || (newTab ? 'noopener noreferrer' : undefined)}
+			target={newTab ? '_blank' : undefined}
+			rel={newTab ? 'noopener noreferrer' : undefined}
+			onClick={onClick}
 			className={`${baseStyles} ${variants[variant]}`}
 		>
 			<span>{text}</span>

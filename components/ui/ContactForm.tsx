@@ -1,17 +1,16 @@
-"use client";
+'use client';
 
-import React, { useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
-import { ToastContainer, toast, Slide } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { IoIosSend } from 'react-icons/io';
+import { trackEvent } from '@/lib/gtag';
 
-type Props = {};
+const ContactForm = () => {
+	const form = useRef<HTMLFormElement | null>(null);
 
-const ContactForm = (props: Props) => {
-  const form = useRef<HTMLFormElement | null>(null);
-
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+	const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		emailjs
@@ -20,6 +19,8 @@ const ContactForm = (props: Props) => {
 			})
 			.then(
 				() => {
+					trackEvent('generate_lead', { method: 'contact_form' });
+
 					toast.success('Message Sent successfully!', {
 						position: 'bottom-right',
 						autoClose: 2000,
@@ -38,11 +39,11 @@ const ContactForm = (props: Props) => {
 				(error) => {
 					toast.error('Failed to send message');
 					console.log('FAILED...', error.text);
-				}
+				},
 			);
-	}
+	};
 
-  return (
+	return (
 		<div className="flex flex-col w-full laptop:w-1/2">
 			<form
 				ref={form}

@@ -1,6 +1,9 @@
+'use client';
+
 import ContactForm from '../ui/ContactForm';
 import Button from '../ui/Button';
 import { FaWhatsapp } from 'react-icons/fa';
+import { trackEvent } from '@/lib/gtag';
 
 const PHONE_NUMBER = '254181244759';
 
@@ -29,8 +32,10 @@ const Contact = () => {
 							text="Quick Response on WhatsApp"
 							href={`https://wa.me/${PHONE_NUMBER}?text=${whatsappMessage}`}
 							icon={<FaWhatsapp className="text-primary text-lg" />}
-							target="_blank"
-							rel="noopener noreferrer"
+							newTab
+							onClick={() =>
+								trackEvent('generate_lead', { method: 'whatsapp' })
+							}
 						/>
 					</div>
 				</div>
