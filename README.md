@@ -5,12 +5,12 @@ A clean, responsive personal portfolio showcasing my work, technical skills, and
 
 ### Homepage
 
-![Homepage](./screenshots/newportfolio.png)
+![Homepage](./screenshots/new.png)
 
 
 ## Live Demo
 
-[Visit My Portfolio](https://design-portfolio-woad.vercel.app/)
+[Visit My Portfolio](https://catherine-vuthi.vercel.app/)
 
 
 ## Features
