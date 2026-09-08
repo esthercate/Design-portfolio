@@ -1,5 +1,3 @@
-import { FaArrowRight } from 'react-icons/fa';
-import Button from '../ui/Button';
 import { services } from '@/lib/services-data';
 
 const panelStyles = [
@@ -45,13 +43,6 @@ const ServiceSplitPanels = () => {
 								<h2 className={style.title}>{service.title}</h2>
 
 								<p className={style.description}>{service.description}</p>
-
-								<Button
-									variant={style.buttonVariant}
-									text="Get Started"
-									href="/#contact"
-									icon={<FaArrowRight className={style.iconClass} />}
-								/>
 							</div>
 						);
 					})}

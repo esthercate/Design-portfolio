@@ -1,10 +1,9 @@
 import PageHero from '../ui/PageHero';
-import Pricing from './Pricing';
 import ProcessTimeline from './ProcessTimeline';
 import ServiceSplitPanels from './ServiceSplitPanels';
 import WebsiteTypesList from './WebsiteTypesList';
-import Cta from '../ui/Cta';
-import Features from './Features';
+import PricingPackage from './PricingPackage';
+import Faq from './Faq';
 
 type Props = {};
 
@@ -17,9 +16,9 @@ const AllServices = (props: Props) => {
 			/>
 			<ServiceSplitPanels />
 			<WebsiteTypesList />
-			<Features />
-			<Pricing />
+			<PricingPackage />
 			<ProcessTimeline />
+			<Faq />
 		</section>
 	);
 };

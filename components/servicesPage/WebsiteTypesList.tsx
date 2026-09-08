@@ -7,7 +7,7 @@ const WebsiteTypesList = () => {
 			<div className="container flex flex-col items-center gap-12">
 				<SectionTitle
 					title="Types of Websites I Build"
-					description="Every business is different — here's how I tailor a website to fit yours."
+					description="I don't use pre-made templates or website builders. Each website is custom-built from the ground up."
 				/>
 
 				<div className="flex w-full max-w-3xl flex-col">

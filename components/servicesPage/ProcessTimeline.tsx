@@ -7,7 +7,7 @@ const ProcessTimeline = () => {
 			<div className="container flex flex-col items-center gap-12">
 				<SectionTitle
 					title="How I Work"
-					description="From first contact to launch, and beyond — here's what working together looks like."
+					description="From first contact to launch, and beyond, here's what working together looks like."
 				/>
 
 				<div className="relative flex w-full max-w-2xl flex-col gap-10">
