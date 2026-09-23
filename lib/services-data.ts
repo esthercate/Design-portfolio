@@ -40,7 +40,7 @@ export const baseInclusions = [
 export const basePricing = {
 	title: 'Custom Website',
 	scope:
-		'A single-page website with up to 8 sections, tailored to your needs. Ideal for businesses, startups, professionals, portfolios, and more',
+		'A single-page website with up to 8 sections, tailored to your needs. Ideal for businesses, startups, professionals, portfolios, and more.',
 	price: 'From 25,000',
 };
 
