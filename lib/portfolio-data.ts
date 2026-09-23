@@ -49,7 +49,7 @@ export const projects: Project[] = [
 			'A web application that converts M-Pesa PDF statements into organized Excel spreadsheets for easier expense tracking and management.',
 		technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
 		categories: ['web'],
-		liveUrl: 'https://m-pesa-expense-tracker.vercel.app/',
+		liveUrl: 'https://m-pesa-pdf-statement-to-excel-converter.vercel.app/',
 	},
 	{
 		id: 3,
