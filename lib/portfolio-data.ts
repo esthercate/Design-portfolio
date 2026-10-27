@@ -89,6 +89,16 @@ export const projects: Project[] = [
 	},
 	{
 		id: 6,
+		image: '/images/serverless-webhook.png',
+		title: 'Serverless Webhook Delivery Platform',
+		description:
+			'A serverless webhook delivery platform using asynchronous processing, retry mechanisms, a dead-letter queue, and delivery status tracking on AWS.',
+		technologies: ['AWS', 'Lambda', 'SQS', 'DynamoDB', 'CloudWatch'],
+		categories: ['aws'],
+		liveUrl: 'https://github.com/esthercate/serverless-webhook-platform',
+	},
+	{
+		id: 7,
 		image: '/images/3-tier-aws.png',
 		title: 'Highly Available 3-Tier Architecture',
 		description:

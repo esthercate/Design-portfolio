@@ -38,10 +38,10 @@ export const baseInclusions = [
 
 // The two packages, separated by how many pages you're building
 export const basePricing = {
-	title: 'Custom Website',
+	title: 'Custom Business Website',
 	scope:
-		'A single-page website with up to 8 sections, tailored to your needs. Ideal for businesses, startups, professionals, portfolios, and more.',
-	price: 'From 25,000',
+		'A modern, responsive website tailored to your business, helping you showcase your services, build trust, and reach more customers online.',
+	price: 'From 40,000',
 };
 
 export const addOnsNote =
